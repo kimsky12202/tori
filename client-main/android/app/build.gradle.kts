@@ -59,15 +59,11 @@ android {
 }
 
 dependencies {
-    // app/libs/unity-classes.jar 가 flutter_unity_widget 로 자동 import 되므로
-    // unityLibrary 가 transitive 로 노출하는 :unity-classes: 모듈을 모두 제외.
     api(project(":unityLibrary"))
     runtimeOnly(project(":compat-stubs"))
+    // app 의 Kotlin/Java 소스가 Unity 클래스(예: IUnityPlayerLifecycleEvents)를 직접 참조하므로 compileOnly 로 제공.
+    compileOnly(files("../unityLibrary/libs/unity-classes.jar"))
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
-}
-
-configurations.all {
-    exclude(group = "", module = "unity-classes")
 }
 
 

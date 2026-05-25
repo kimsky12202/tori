@@ -2,7 +2,9 @@ apply plugin: 'com.android.library'
 
 
 dependencies {
-    implementation(name: 'unity-classes', ext:'jar')
+    // app 도 동일한 jar 를 갖고 있어 transitive 전파 시 중복 클래스 에러 발생.
+    // compileOnly 로 변경하면 unityLibrary 만 컴파일에 쓰고 consumer 에는 전파하지 않음.
+    compileOnly(name: 'unity-classes', ext:'jar')
     implementation(name: 'arcore_client', ext:'aar')
     implementation(name: 'UnityARCore', ext:'aar')
     implementation(name: 'ARPresto', ext:'aar')
