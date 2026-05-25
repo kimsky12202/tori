@@ -345,8 +345,15 @@ class _MapPageState extends State<MapPage> {
       options: MapOptions(
         initialCenter: center,
         initialZoom: 13,
-        minZoom: 4,
+        minZoom: 5,
         maxZoom: 20,
+        // 줌아웃 시 Mercator 좌표가 NaN 으로 발산하는 것을 방지.
+        cameraConstraint: CameraConstraint.contain(
+          bounds: LatLngBounds(
+            const LatLng(-85.0, -180.0),
+            const LatLng(85.0, 180.0),
+          ),
+        ),
       ),
       children: [
         TileLayer(
