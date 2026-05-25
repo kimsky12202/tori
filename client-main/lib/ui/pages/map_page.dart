@@ -85,10 +85,11 @@ class _MapPageState extends State<MapPage> {
         locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
       );
       if (!mounted) return;
-      setState(() {
-        _userLatLng = LatLng(initial.latitude, initial.longitude);
-      });
-      _mapController.move(_userLatLng!, 14);
+      final initialLatLng = _safeLatLng(initial.latitude, initial.longitude);
+      if (initialLatLng != null) {
+        setState(() => _userLatLng = initialLatLng);
+        _mapController.move(initialLatLng, 14);
+      }
 
       _positionSub = Geolocator.getPositionStream(
         locationSettings: const LocationSettings(
@@ -97,11 +98,18 @@ class _MapPageState extends State<MapPage> {
         ),
       ).listen((position) {
         if (!mounted) return;
-        setState(() {
-          _userLatLng = LatLng(position.latitude, position.longitude);
-        });
+        final next = _safeLatLng(position.latitude, position.longitude);
+        if (next == null) return;
+        setState(() => _userLatLng = next);
       });
     } catch (_) {}
+  }
+
+  static LatLng? _safeLatLng(double lat, double lon) {
+    if (lat.isNaN || lon.isNaN || lat.isInfinite || lon.isInfinite) return null;
+    if (lat == 0 && lon == 0) return null;
+    if (lat.abs() > 90 || lon.abs() > 180) return null;
+    return LatLng(lat, lon);
   }
 
   Future<void> _centerOnUser() async {
@@ -326,7 +334,12 @@ class _MapPageState extends State<MapPage> {
     if (!MapConfig.hasValidToken) {
       return const _MissingTokenView();
     }
-    final center = _userLatLng ?? _defaultCenter;
+    final user = _userLatLng;
+    final center = (user != null &&
+            user.latitude.isFinite &&
+            user.longitude.isFinite)
+        ? user
+        : _defaultCenter;
     return FlutterMap(
       mapController: _mapController,
       options: MapOptions(
@@ -353,9 +366,11 @@ class _MapPageState extends State<MapPage> {
     final markers = <Marker>[];
 
     for (final spot in _visibleSpots) {
+      final point = _safeLatLng(spot.latitude, spot.longitude);
+      if (point == null) continue;
       markers.add(
         Marker(
-          point: LatLng(spot.latitude, spot.longitude),
+          point: point,
           width: 56,
           height: 64,
           alignment: Alignment.topCenter,
@@ -370,9 +385,11 @@ class _MapPageState extends State<MapPage> {
     if (_showCapsules) {
       for (final capsule in _capsules) {
         if (!capsule.isBuried) continue;
+        final point = _safeLatLng(capsule.latitude, capsule.longitude);
+        if (point == null) continue;
         markers.add(
           Marker(
-            point: LatLng(capsule.latitude, capsule.longitude),
+            point: point,
             width: 36,
             height: 36,
             child: GestureDetector(
