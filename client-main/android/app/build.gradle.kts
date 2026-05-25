@@ -59,13 +59,15 @@ android {
 }
 
 dependencies {
-    // unityLibrary 가 transitive 로 노출하는 unity-classes 를 제외 (app/libs/unity-classes.jar 와 중복 방지)
-    api(project(":unityLibrary")) {
-        exclude(module = "unity-classes")
-    }
+    // app/libs/unity-classes.jar 가 flutter_unity_widget 로 자동 import 되므로
+    // unityLibrary 가 transitive 로 노출하는 :unity-classes: 모듈을 모두 제외.
+    api(project(":unityLibrary"))
     runtimeOnly(project(":compat-stubs"))
-    compileOnly(files("../unityLibrary/libs/unity-classes.jar"))
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+}
+
+configurations.all {
+    exclude(group = "", module = "unity-classes")
 }
 
 
