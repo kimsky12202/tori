@@ -8,12 +8,10 @@ import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
 
 import 'ar/ar_screen.dart';
-import 'capsule/capsule_content_sheet.dart';
 import 'map/capsule_locked_sheet.dart';
 import 'map/map_config.dart';
 import 'map/spot_detail_sheet.dart';
 import 'map/tourist_spot_models.dart';
-import '../services/capsule_api.dart';
 import '../services/tourist_spot_api.dart';
 
 class MapPage extends StatefulWidget {
@@ -31,7 +29,6 @@ class _MapPageState extends State<MapPage> {
   static const _mutedColor = Color(0xFF7A756D);
 
   final _spotApi = TouristSpotApi();
-  final _capsuleApi = CapsuleApi();
   final _mapController = MapController();
 
   List<TouristSpot> _spots = const [];
@@ -40,7 +37,6 @@ class _MapPageState extends State<MapPage> {
   bool _showCapsules = true;
   bool _loading = true;
   bool _checkingIn = false;
-  bool _isCreatingCapsule = false;
   LatLng? _userLatLng;
   StreamSubscription<Position>? _positionSub;
 
@@ -209,71 +205,6 @@ class _MapPageState extends State<MapPage> {
         const SnackBar(content: Text('인증에 실패했어요. 위치를 확인해주세요.')),
       );
     }
-  }
-
-  Future<(double, double)?> _captureGPS() async {
-    final user = _userLatLng;
-    if (user != null) return (user.latitude, user.longitude);
-    try {
-      final position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
-      );
-      return (position.latitude, position.longitude);
-    } catch (_) {
-      return null;
-    }
-  }
-
-  Future<void> _createCapsuleDirectly(CapsuleData data) async {
-    if (_isCreatingCapsule) return;
-    setState(() => _isCreatingCapsule = true);
-    final coords = await _captureGPS();
-    final capsuleId = await _capsuleApi.createCapsule(
-      data: data,
-      latitude: coords?.$1 ?? 0,
-      longitude: coords?.$2 ?? 0,
-      memberIds: data.friendIds,
-    );
-    bool buried = false;
-    if (capsuleId != null) {
-      buried = await _capsuleApi.buryCapsule(capsuleId: capsuleId);
-    }
-    if (!mounted) return;
-    setState(() => _isCreatingCapsule = false);
-    if (capsuleId == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('캡슐 생성에 실패했습니다.')),
-      );
-      return;
-    }
-    if (!buried) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('캡슐은 생성됐지만 묻기 처리에 실패했습니다.')),
-      );
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('캡슐이 묻혔어요. 근처 관광지가 자동 인증돼요.')),
-      );
-    }
-    await _refresh();
-  }
-
-  void _showCreateCapsuleSheet() {
-    if (_isCreatingCapsule) return;
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (_) => DraggableScrollableSheet(
-        initialChildSize: 0.88,
-        minChildSize: 0.5,
-        maxChildSize: 0.95,
-        builder: (_, sheetController) => PrimaryScrollController(
-          controller: sheetController,
-          child: CapsuleContentSheet(onConfirm: _createCapsuleDirectly),
-        ),
-      ),
-    );
   }
 
   void _openSpotSheet(TouristSpot spot) {
@@ -452,9 +383,10 @@ class _MapPageState extends State<MapPage> {
                   child: Text(
                     '관광지 탐험 지도',
                     style: TextStyle(
+                      fontFamily: 'Workbench',
                       color: _textColor,
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      letterSpacing: 1.0,
                     ),
                   ),
                 ),
@@ -581,7 +513,12 @@ class _MapPageState extends State<MapPage> {
             ),
             const Text(
               '발견한 관광지',
-              style: TextStyle(color: _mutedColor, fontSize: 13, fontWeight: FontWeight.w600),
+              style: TextStyle(
+                fontFamily: 'Workbench',
+                color: _mutedColor,
+                fontSize: 13,
+                letterSpacing: 0.8,
+              ),
             ),
             const SizedBox(height: 6),
             Row(
@@ -590,18 +527,26 @@ class _MapPageState extends State<MapPage> {
                 Text(
                   '${visited.length}',
                   style: const TextStyle(
+                    fontFamily: 'Workbench',
                     color: _accentColor,
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
                   ),
                 ),
                 const Text(
                   ' / ',
-                  style: TextStyle(color: _mutedColor, fontSize: 18),
+                  style: TextStyle(
+                    fontFamily: 'Workbench',
+                    color: _mutedColor,
+                    fontSize: 20,
+                  ),
                 ),
                 Text(
                   '$total',
-                  style: const TextStyle(color: _mutedColor, fontSize: 18),
+                  style: const TextStyle(
+                    fontFamily: 'Workbench',
+                    color: _mutedColor,
+                    fontSize: 20,
+                  ),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -622,44 +567,29 @@ class _MapPageState extends State<MapPage> {
               children: [
                 ..._buildVisitedAvatars(visited),
                 const Spacer(),
-                ElevatedButton.icon(
-                  onPressed: _discoverNearby,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: _accentColor,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(24),
-                    ),
-                  ),
-                  icon: const Icon(Icons.gps_fixed, size: 18),
-                  label: const Text(
-                    '근처에서 발견하기',
-                    style: TextStyle(fontWeight: FontWeight.w700),
-                  ),
-                ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 12),
             Row(
               children: [
                 Expanded(
-                  child: OutlinedButton.icon(
-                    onPressed: _isCreatingCapsule ? null : _showCreateCapsuleSheet,
-                    icon: _isCreatingCapsule
-                        ? const SizedBox(
-                            width: 14,
-                            height: 14,
-                            child: CircularProgressIndicator(strokeWidth: 2),
-                          )
-                        : const Icon(Icons.add, size: 18),
-                    label: const Text('캡슐 추가'),
-                    style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      foregroundColor: _textColor,
-                      side: const BorderSide(color: Color(0xFFD9D5CC)),
+                  child: ElevatedButton.icon(
+                    onPressed: _discoverNearby,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: _accentColor,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    icon: const Icon(Icons.gps_fixed, size: 18),
+                    label: const Text(
+                      '근처에서 발견하기',
+                      style: TextStyle(
+                        fontFamily: 'Workbench',
+                        fontSize: 14,
+                        letterSpacing: 0.5,
                       ),
                     ),
                   ),
@@ -674,9 +604,16 @@ class _MapPageState extends State<MapPage> {
                       ).then((_) => _refresh());
                     },
                     icon: const Icon(Icons.view_in_ar, size: 18),
-                    label: const Text('AR 인증'),
+                    label: const Text(
+                      'AR 인증',
+                      style: TextStyle(
+                        fontFamily: 'Workbench',
+                        fontSize: 14,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
                     style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      padding: const EdgeInsets.symmetric(vertical: 14),
                       backgroundColor: const Color(0xFFA14040),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(

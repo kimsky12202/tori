@@ -68,8 +68,9 @@ class SpotDetailSheet extends StatelessWidget {
                       Text(
                         visited ? spot.name : '미발견 장소',
                         style: const TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Workbench',
+                          fontSize: 18,
+                          letterSpacing: 0.8,
                           color: Color(0xFF2E2B2A),
                         ),
                       ),
