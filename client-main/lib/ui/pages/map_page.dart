@@ -21,7 +21,7 @@ class MapPage extends StatefulWidget {
   State<MapPage> createState() => _MapPageState();
 }
 
-class _MapPageState extends State<MapPage> {
+class _MapPageState extends State<MapPage> with TickerProviderStateMixin {
   static const _defaultCenter = LatLng(37.5665, 126.9780);
   static const _accentColor = Color(0xFF1FAA8C);
   static const _bgColor = Color(0xFFF4F1EA);
@@ -37,8 +37,10 @@ class _MapPageState extends State<MapPage> {
   bool _showCapsules = true;
   bool _loading = true;
   bool _checkingIn = false;
+  MapStyle _mapStyle = MapStyle.streets;
   LatLng? _userLatLng;
   StreamSubscription<Position>? _positionSub;
+  AnimationController? _cameraAnim;
 
   @override
   void initState() {
@@ -50,7 +52,32 @@ class _MapPageState extends State<MapPage> {
   @override
   void dispose() {
     _positionSub?.cancel();
+    _cameraAnim?.dispose();
     super.dispose();
+  }
+
+  /// 마커 탭 시 카메라가 해당 위치로 부드럽게 줌인.
+  /// 한국엔 Mapbox 3D building 데이터가 거의 없어서 raster + 줌인으로 입체감 연출.
+  void _flyTo(LatLng dest, {double zoom = 17}) {
+    _cameraAnim?.dispose();
+    final start = _mapController.camera.center;
+    final startZoom = _mapController.camera.zoom;
+    final anim = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    );
+    final curve = CurvedAnimation(parent: anim, curve: Curves.easeInOutCubic);
+    anim.addListener(() {
+      final t = curve.value;
+      final lat = start.latitude + (dest.latitude - start.latitude) * t;
+      final lng = start.longitude + (dest.longitude - start.longitude) * t;
+      final z = startZoom + (zoom - startZoom) * t;
+      final p = _safeLatLng(lat, lng);
+      if (p == null) return;
+      _mapController.move(p, z);
+    });
+    _cameraAnim = anim;
+    anim.forward();
   }
 
   Future<void> _refresh() async {
@@ -208,10 +235,18 @@ class _MapPageState extends State<MapPage> {
   }
 
   void _openSpotSheet(TouristSpot spot) {
+    final spotLatLng = _safeLatLng(spot.latitude, spot.longitude);
+    if (spotLatLng != null) {
+      // 위성 스타일로 자동 전환해 입체감 강화 + 부드러운 줌인
+      if (_mapStyle != MapStyle.satellite) {
+        setState(() => _mapStyle = MapStyle.satellite);
+      }
+      _flyTo(spotLatLng, zoom: 18);
+    }
     final user = _userLatLng;
     final isWithinRadius = user != null &&
-        _distanceMeters(user, LatLng(spot.latitude, spot.longitude)) <=
-            spot.radiusMeters;
+        spotLatLng != null &&
+        _distanceMeters(user, spotLatLng) <= spot.radiusMeters;
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
@@ -228,6 +263,10 @@ class _MapPageState extends State<MapPage> {
   }
 
   void _openCapsuleSheet(CapsuleMapMarker capsule) {
+    final capsuleLatLng = _safeLatLng(capsule.latitude, capsule.longitude);
+    if (capsuleLatLng != null) {
+      _flyTo(capsuleLatLng, zoom: 17);
+    }
     String? spotName;
     for (final s in _spots) {
       if (s.visit?.capsuleId == capsule.id) {
@@ -288,7 +327,7 @@ class _MapPageState extends State<MapPage> {
       ),
       children: [
         TileLayer(
-          urlTemplate: MapConfig.tileUrlTemplate,
+          urlTemplate: MapConfig.tileUrlTemplate(_mapStyle),
           userAgentPackageName: 'me.toricapsule.app',
           maxZoom: 22,
           tileSize: 512,
@@ -472,12 +511,36 @@ class _MapPageState extends State<MapPage> {
     return Positioned(
       right: 16,
       bottom: 220,
-      child: FloatingActionButton(
-        heroTag: 'map_locate',
-        backgroundColor: Colors.white,
-        elevation: 4,
-        onPressed: _centerOnUser,
-        child: const Icon(Icons.my_location, color: _textColor),
+      child: Column(
+        children: [
+          FloatingActionButton.small(
+            heroTag: 'map_style',
+            backgroundColor: Colors.white,
+            elevation: 4,
+            onPressed: () {
+              setState(() {
+                _mapStyle = _mapStyle == MapStyle.streets
+                    ? MapStyle.satellite
+                    : MapStyle.streets;
+              });
+            },
+            child: Icon(
+              _mapStyle == MapStyle.streets
+                  ? Icons.public_outlined
+                  : Icons.map_outlined,
+              color: _textColor,
+              size: 20,
+            ),
+          ),
+          const SizedBox(height: 8),
+          FloatingActionButton(
+            heroTag: 'map_locate',
+            backgroundColor: Colors.white,
+            elevation: 4,
+            onPressed: _centerOnUser,
+            child: const Icon(Icons.my_location, color: _textColor),
+          ),
+        ],
       ),
     );
   }

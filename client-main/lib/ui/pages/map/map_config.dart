@@ -6,23 +6,43 @@ import 'package:flutter/foundation.dart';
 ///   flutter run --dart-define=MAPBOX_TOKEN=pk.your_token_here
 ///
 /// IDE에서 실행할 경우 launch.json / additional run args 에도 동일하게 추가.
+enum MapStyle {
+  streets,
+  satellite,
+}
+
+extension MapStyleId on MapStyle {
+  String get id {
+    switch (this) {
+      case MapStyle.streets:
+        return 'mapbox/streets-v12';
+      case MapStyle.satellite:
+        return 'mapbox/satellite-streets-v12';
+    }
+  }
+
+  String get label {
+    switch (this) {
+      case MapStyle.streets:
+        return '지도';
+      case MapStyle.satellite:
+        return '위성';
+    }
+  }
+}
+
 class MapConfig {
   static const String mapboxToken = String.fromEnvironment(
     'MAPBOX_TOKEN',
     defaultValue: '',
   );
 
-  static const String mapboxStyleId = String.fromEnvironment(
-    'MAPBOX_STYLE',
-    defaultValue: 'mapbox/streets-v12',
-  );
-
   static const int tileSize = 512;
 
   /// Mapbox raster tiles API.
   /// 512px 레티나 타일 사용 (flutter_map TileLayer 에서 tileSize: 512, zoomOffset: -1 함께 설정).
-  static String get tileUrlTemplate {
-    return 'https://api.mapbox.com/styles/v1/$mapboxStyleId/tiles/$tileSize/{z}/{x}/{y}@2x?access_token=$mapboxToken';
+  static String tileUrlTemplate(MapStyle style) {
+    return 'https://api.mapbox.com/styles/v1/${style.id}/tiles/$tileSize/{z}/{x}/{y}@2x?access_token=$mapboxToken';
   }
 
   static bool get hasValidToken {
