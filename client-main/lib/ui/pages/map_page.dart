@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -832,7 +833,7 @@ class _PinPainter extends CustomPainter {
     final paint = Paint()..color = color;
     final radius = size.width / 2;
     canvas.drawCircle(Offset(radius, radius), radius, paint);
-    final path = Path()
+    final path = ui.Path()
       ..moveTo(radius * 0.4, radius * 1.4)
       ..quadraticBezierTo(radius, size.height, radius * 1.6, radius * 1.4)
       ..close();
