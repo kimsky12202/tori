@@ -1,8 +1,18 @@
+import 'dart:async';
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:latlong2/latlong.dart';
+
 import 'ar/ar_screen.dart';
 import 'capsule/capsule_content_sheet.dart';
+import 'map/capsule_locked_sheet.dart';
+import 'map/spot_detail_sheet.dart';
+import 'map/tourist_spot_models.dart';
 import '../services/capsule_api.dart';
+import '../services/tourist_spot_api.dart';
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -12,21 +22,191 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
-  final _capsuleApi = CapsuleApi();
-  bool _isCreatingCapsule = false;
+  static const _defaultCenter = LatLng(37.5665, 126.9780);
+  static const _accentColor = Color(0xFF1FAA8C);
+  static const _bgColor = Color(0xFFF4F1EA);
+  static const _textColor = Color(0xFF2E2B2A);
+  static const _mutedColor = Color(0xFF7A756D);
 
-  Future<(double, double)?> _captureGPS() async {
+  final _spotApi = TouristSpotApi();
+  final _capsuleApi = CapsuleApi();
+  final _mapController = MapController();
+
+  List<TouristSpot> _spots = const [];
+  List<CapsuleMapMarker> _capsules = const [];
+  SpotFilter _filter = SpotFilter.all;
+  bool _showCapsules = true;
+  bool _loading = true;
+  bool _checkingIn = false;
+  bool _isCreatingCapsule = false;
+  LatLng? _userLatLng;
+  StreamSubscription<Position>? _positionSub;
+
+  @override
+  void initState() {
+    super.initState();
+    _refresh();
+    _startLocationUpdates();
+  }
+
+  @override
+  void dispose() {
+    _positionSub?.cancel();
+    super.dispose();
+  }
+
+  Future<void> _refresh() async {
+    setState(() => _loading = true);
+    final results = await Future.wait([
+      _spotApi.listSpots(),
+      _spotApi.listCapsules(),
+    ]);
+    if (!mounted) return;
+    setState(() {
+      _spots = results[0] as List<TouristSpot>;
+      _capsules = results[1] as List<CapsuleMapMarker>;
+      _loading = false;
+    });
+  }
+
+  Future<void> _startLocationUpdates() async {
     try {
       LocationPermission permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
       }
-      if (permission == LocationPermission.deniedForever) return null;
+      if (permission == LocationPermission.denied ||
+          permission == LocationPermission.deniedForever) {
+        return;
+      }
+      final initial = await Geolocator.getCurrentPosition(
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
+      );
+      if (!mounted) return;
+      setState(() {
+        _userLatLng = LatLng(initial.latitude, initial.longitude);
+      });
+      _mapController.move(_userLatLng!, 14);
 
-      final position = await Geolocator.getCurrentPosition(
+      _positionSub = Geolocator.getPositionStream(
         locationSettings: const LocationSettings(
           accuracy: LocationAccuracy.high,
+          distanceFilter: 10,
         ),
+      ).listen((position) {
+        if (!mounted) return;
+        setState(() {
+          _userLatLng = LatLng(position.latitude, position.longitude);
+        });
+      });
+    } catch (_) {}
+  }
+
+  Future<void> _centerOnUser() async {
+    final loc = _userLatLng;
+    if (loc != null) {
+      _mapController.move(loc, 15);
+      return;
+    }
+    await _startLocationUpdates();
+  }
+
+  Iterable<TouristSpot> get _visibleSpots {
+    switch (_filter) {
+      case SpotFilter.all:
+        return _spots;
+      case SpotFilter.undiscovered:
+        return _spots.where((s) => !s.visited);
+      case SpotFilter.completed:
+        return _spots.where((s) => s.visited);
+    }
+  }
+
+  double _distanceMeters(LatLng a, LatLng b) {
+    const earth = 6371000.0;
+    final rad = math.pi / 180;
+    final dLat = (b.latitude - a.latitude) * rad;
+    final dLon = (b.longitude - a.longitude) * rad;
+    final h = math.sin(dLat / 2) * math.sin(dLat / 2) +
+        math.cos(a.latitude * rad) *
+            math.cos(b.latitude * rad) *
+            math.sin(dLon / 2) *
+            math.sin(dLon / 2);
+    return earth * 2 * math.atan2(math.sqrt(h), math.sqrt(1 - h));
+  }
+
+  Future<void> _discoverNearby() async {
+    final user = _userLatLng;
+    if (user == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('현재 위치를 가져오지 못했어요.')),
+      );
+      return;
+    }
+
+    TouristSpot? nearest;
+    double nearestDistance = double.infinity;
+    for (final spot in _spots) {
+      if (spot.visited) continue;
+      final d = _distanceMeters(user, LatLng(spot.latitude, spot.longitude));
+      if (d < nearestDistance) {
+        nearest = spot;
+        nearestDistance = d;
+      }
+    }
+
+    if (nearest == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('이미 모든 관광지를 발견했어요!')),
+      );
+      return;
+    }
+
+    if (nearestDistance > nearest.radiusMeters) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            '가장 가까운 미발견 장소까지 ${nearestDistance.toStringAsFixed(0)}m 남았어요.',
+          ),
+        ),
+      );
+      _mapController.move(LatLng(nearest.latitude, nearest.longitude), 15);
+      return;
+    }
+
+    await _checkInSpot(nearest, source: 'manual');
+  }
+
+  Future<void> _checkInSpot(TouristSpot spot, {String source = 'ar'}) async {
+    if (_checkingIn) return;
+    setState(() => _checkingIn = true);
+    final user = _userLatLng;
+    final ok = await _spotApi.visitSpot(
+      spotId: spot.id,
+      source: source,
+      latitude: user?.latitude,
+      longitude: user?.longitude,
+    );
+    if (!mounted) return;
+    setState(() => _checkingIn = false);
+    if (ok) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('${spot.name}을(를) 발견했어요!')),
+      );
+      await _refresh();
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('인증에 실패했어요. 위치를 확인해주세요.')),
+      );
+    }
+  }
+
+  Future<(double, double)?> _captureGPS() async {
+    final user = _userLatLng;
+    if (user != null) return (user.latitude, user.longitude);
+    try {
+      final position = await Geolocator.getCurrentPosition(
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
       );
       return (position.latitude, position.longitude);
     } catch (_) {
@@ -37,46 +217,38 @@ class _MapPageState extends State<MapPage> {
   Future<void> _createCapsuleDirectly(CapsuleData data) async {
     if (_isCreatingCapsule) return;
     setState(() => _isCreatingCapsule = true);
-
     final coords = await _captureGPS();
-    final latitude = coords?.$1 ?? 0;
-    final longitude = coords?.$2 ?? 0;
-
     final capsuleId = await _capsuleApi.createCapsule(
       data: data,
-      latitude: latitude,
-      longitude: longitude,
+      latitude: coords?.$1 ?? 0,
+      longitude: coords?.$2 ?? 0,
       memberIds: data.friendIds,
     );
-
-    bool isBuried = false;
+    bool buried = false;
     if (capsuleId != null) {
-      isBuried = await _capsuleApi.buryCapsule(capsuleId: capsuleId);
+      buried = await _capsuleApi.buryCapsule(capsuleId: capsuleId);
     }
-
     if (!mounted) return;
     setState(() => _isCreatingCapsule = false);
-
     if (capsuleId == null) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('캡슐 생성에 실패했습니다.')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('캡슐 생성에 실패했습니다.')),
+      );
       return;
     }
-
-    if (!isBuried) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('캡슐은 생성됐지만 묻기 처리에 실패했습니다.')));
-      return;
+    if (!buried) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('캡슐은 생성됐지만 묻기 처리에 실패했습니다.')),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('캡슐이 묻혔어요. 근처 관광지가 자동 인증돼요.')),
+      );
     }
-
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('캡슐이 추가되었습니다.')));
+    await _refresh();
   }
 
-  void _showCapsuleCreateSheet() {
+  void _showCreateCapsuleSheet() {
     if (_isCreatingCapsule) return;
     showModalBottomSheet(
       context: context,
@@ -94,54 +266,580 @@ class _MapPageState extends State<MapPage> {
     );
   }
 
+  void _openSpotSheet(TouristSpot spot) {
+    final user = _userLatLng;
+    final isWithinRadius = user != null &&
+        _distanceMeters(user, LatLng(spot.latitude, spot.longitude)) <=
+            spot.radiusMeters;
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (_) => SpotDetailSheet(
+        spot: spot,
+        isWithinRadius: isWithinRadius,
+        isCheckingIn: _checkingIn,
+        onCheckIn: () async {
+          Navigator.of(context).pop();
+          await _checkInSpot(spot, source: 'manual');
+        },
+      ),
+    );
+  }
+
+  void _openCapsuleSheet(CapsuleMapMarker capsule) {
+    String? spotName;
+    for (final s in _spots) {
+      if (s.visit?.capsuleId == capsule.id) {
+        spotName = s.name;
+        break;
+      }
+    }
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (_) => CapsuleLockedSheet(capsule: capsule, spotName: spotName),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final visited = _spots.where((s) => s.visited).toList();
+    final total = _spots.length;
+    final progress = total == 0 ? 0.0 : visited.length / total;
+
     return Scaffold(
-      backgroundColor: const Color(0xFFF4F1EA),
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        iconTheme: const IconThemeData(color: Color(0xFF2E2B2A)),
-      ),
-      body: const Center(
-        child: Text(
-          '지도 화면',
-          style: TextStyle(color: Color(0xFF2E2B2A), fontSize: 16),
-        ),
-      ),
-      floatingActionButton: Row(
-        mainAxisSize: MainAxisSize.min,
+      backgroundColor: _bgColor,
+      body: Stack(
         children: [
-          FloatingActionButton.extended(
-            heroTag: 'quick_capsule_create',
-            onPressed: _isCreatingCapsule ? null : _showCapsuleCreateSheet,
-            backgroundColor: const Color(0xFF2E2B2A),
-            icon: _isCreatingCapsule
-                ? const SizedBox(
-                    width: 18,
-                    height: 18,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      color: Colors.white,
-                    ),
-                  )
-                : const Icon(Icons.add, color: Colors.white),
-            label: const Text('캡슐 추가', style: TextStyle(color: Colors.white)),
-          ),
-          const SizedBox(width: 12),
-          FloatingActionButton(
-            heroTag: 'ar_enter',
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ArScreen()),
-              );
-            },
-            backgroundColor: const Color(0xFFA14040),
-            child: const Icon(Icons.view_in_ar, color: Colors.white),
-          ),
+          _buildMap(),
+          _buildTopBar(),
+          _buildLocationButton(),
+          _buildBottomSheet(visited, total, progress),
         ],
       ),
     );
   }
+
+  Widget _buildMap() {
+    final center = _userLatLng ?? _defaultCenter;
+    return FlutterMap(
+      mapController: _mapController,
+      options: MapOptions(
+        initialCenter: center,
+        initialZoom: 13,
+        minZoom: 4,
+        maxZoom: 18,
+      ),
+      children: [
+        TileLayer(
+          urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+          userAgentPackageName: 'me.toricapsule.app',
+          maxZoom: 19,
+        ),
+        MarkerLayer(markers: _buildMarkers()),
+      ],
+    );
+  }
+
+  List<Marker> _buildMarkers() {
+    final markers = <Marker>[];
+
+    for (final spot in _visibleSpots) {
+      markers.add(
+        Marker(
+          point: LatLng(spot.latitude, spot.longitude),
+          width: 56,
+          height: 64,
+          alignment: Alignment.topCenter,
+          child: GestureDetector(
+            onTap: () => _openSpotSheet(spot),
+            child: _SpotMarker(spot: spot),
+          ),
+        ),
+      );
+    }
+
+    if (_showCapsules) {
+      for (final capsule in _capsules) {
+        if (!capsule.isBuried) continue;
+        markers.add(
+          Marker(
+            point: LatLng(capsule.latitude, capsule.longitude),
+            width: 36,
+            height: 36,
+            child: GestureDetector(
+              onTap: () => _openCapsuleSheet(capsule),
+              child: _CapsuleMarker(locked: capsule.isLocked),
+            ),
+          ),
+        );
+      }
+    }
+
+    if (_userLatLng != null) {
+      markers.add(
+        Marker(
+          point: _userLatLng!,
+          width: 28,
+          height: 28,
+          child: const _UserMarker(),
+        ),
+      );
+    }
+
+    return markers;
+  }
+
+  Widget _buildTopBar() {
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+        child: Container(
+          height: 56,
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.06),
+                blurRadius: 12,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              IconButton(
+                onPressed: _showFilterMenu,
+                icon: const Icon(Icons.tune, color: _textColor),
+                tooltip: '필터',
+              ),
+              const Expanded(
+                child: Center(
+                  child: Text(
+                    '관광지 탐험 지도',
+                    style: TextStyle(
+                      color: _textColor,
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              IconButton(
+                onPressed: _refresh,
+                icon: _loading
+                    ? const SizedBox(
+                        width: 18,
+                        height: 18,
+                        child: CircularProgressIndicator(strokeWidth: 2),
+                      )
+                    : const Icon(Icons.refresh, color: _textColor),
+                tooltip: '새로고침',
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showFilterMenu() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (_) => SafeArea(
+        top: false,
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const Text(
+                '관광지 필터',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: _textColor),
+              ),
+              const SizedBox(height: 12),
+              Wrap(
+                spacing: 8,
+                children: SpotFilter.values
+                    .map(
+                      (f) => ChoiceChip(
+                        label: Text(f.label),
+                        selected: _filter == f,
+                        selectedColor: _accentColor.withValues(alpha: 0.2),
+                        onSelected: (_) {
+                          setState(() => _filter = f);
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                    )
+                    .toList(),
+              ),
+              const Divider(height: 32),
+              const Text(
+                '내가 묻은 캡슐',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: _textColor),
+              ),
+              SwitchListTile(
+                contentPadding: EdgeInsets.zero,
+                title: const Text('지도에 캡슐 표시', style: TextStyle(color: _textColor)),
+                value: _showCapsules,
+                activeColor: _accentColor,
+                onChanged: (value) {
+                  setState(() => _showCapsules = value);
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLocationButton() {
+    return Positioned(
+      right: 16,
+      bottom: 220,
+      child: FloatingActionButton(
+        heroTag: 'map_locate',
+        backgroundColor: Colors.white,
+        elevation: 4,
+        onPressed: _centerOnUser,
+        child: const Icon(Icons.my_location, color: _textColor),
+      ),
+    );
+  }
+
+  Widget _buildBottomSheet(List<TouristSpot> visited, int total, double progress) {
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: 0,
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(20, 12, 20, 20),
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          boxShadow: [
+            BoxShadow(color: Color(0x14000000), blurRadius: 16, offset: Offset(0, -2)),
+          ],
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                margin: const EdgeInsets.only(bottom: 12),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD9D5CC),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const Text(
+              '발견한 관광지',
+              style: TextStyle(color: _mutedColor, fontSize: 13, fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(height: 6),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  '${visited.length}',
+                  style: const TextStyle(
+                    color: _accentColor,
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Text(
+                  ' / ',
+                  style: TextStyle(color: _mutedColor, fontSize: 18),
+                ),
+                Text(
+                  '$total',
+                  style: const TextStyle(color: _mutedColor, fontSize: 18),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: progress,
+                      minHeight: 8,
+                      backgroundColor: const Color(0xFFE7E3D8),
+                      color: _accentColor,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Row(
+              children: [
+                ..._buildVisitedAvatars(visited),
+                const Spacer(),
+                ElevatedButton.icon(
+                  onPressed: _discoverNearby,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: _accentColor,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
+                  icon: const Icon(Icons.gps_fixed, size: 18),
+                  label: const Text(
+                    '근처에서 발견하기',
+                    style: TextStyle(fontWeight: FontWeight.w700),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                Expanded(
+                  child: OutlinedButton.icon(
+                    onPressed: _isCreatingCapsule ? null : _showCreateCapsuleSheet,
+                    icon: _isCreatingCapsule
+                        ? const SizedBox(
+                            width: 14,
+                            height: 14,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          )
+                        : const Icon(Icons.add, size: 18),
+                    label: const Text('캡슐 추가'),
+                    style: OutlinedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      foregroundColor: _textColor,
+                      side: const BorderSide(color: Color(0xFFD9D5CC)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => const ArScreen()),
+                      ).then((_) => _refresh());
+                    },
+                    icon: const Icon(Icons.view_in_ar, size: 18),
+                    label: const Text('AR 인증'),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      backgroundColor: const Color(0xFFA14040),
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  List<Widget> _buildVisitedAvatars(List<TouristSpot> visited) {
+    const maxAvatars = 3;
+    final avatars = <Widget>[];
+    for (var i = 0; i < visited.length && i < maxAvatars; i++) {
+      final spot = visited[i];
+      avatars.add(
+        Padding(
+          padding: EdgeInsets.only(left: i == 0 ? 0 : 6),
+          child: _VisitedAvatar(spot: spot),
+        ),
+      );
+    }
+    final remaining = visited.length - maxAvatars;
+    if (remaining > 0) {
+      avatars.add(
+        Padding(
+          padding: const EdgeInsets.only(left: 6),
+          child: Container(
+            width: 36,
+            height: 36,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: const Color(0xFFD9D5CC), style: BorderStyle.solid),
+            ),
+            alignment: Alignment.center,
+            child: Text(
+              '+$remaining',
+              style: const TextStyle(color: _mutedColor, fontWeight: FontWeight.w600, fontSize: 12),
+            ),
+          ),
+        ),
+      );
+    }
+    return avatars;
+  }
+}
+
+class _SpotMarker extends StatelessWidget {
+  const _SpotMarker({required this.spot});
+
+  final TouristSpot spot;
+
+  @override
+  Widget build(BuildContext context) {
+    final visited = spot.visited;
+    final color = visited ? spot.markerColor : const Color(0xFF54514D);
+    return Stack(
+      clipBehavior: Clip.none,
+      alignment: Alignment.topCenter,
+      children: [
+        CustomPaint(
+          size: const Size(44, 56),
+          painter: _PinPainter(color: color),
+        ),
+        Positioned(
+          top: 8,
+          child: Container(
+            width: 28,
+            height: 28,
+            decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+            alignment: Alignment.center,
+            child: Icon(
+              visited ? spot.markerIcon : Icons.help_outline,
+              color: color,
+              size: 18,
+            ),
+          ),
+        ),
+        if (visited)
+          Positioned(
+            top: 30,
+            right: 4,
+            child: Container(
+              width: 14,
+              height: 14,
+              decoration: BoxDecoration(
+                color: color,
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.white, width: 1.5),
+              ),
+              alignment: Alignment.center,
+              child: const Icon(Icons.check, color: Colors.white, size: 9),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _CapsuleMarker extends StatelessWidget {
+  const _CapsuleMarker({required this.locked});
+
+  final bool locked;
+
+  @override
+  Widget build(BuildContext context) {
+    final color = locked ? const Color(0xFFA14040) : const Color(0xFF1FAA8C);
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        shape: BoxShape.circle,
+        border: Border.all(color: color, width: 2),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withValues(alpha: 0.15), blurRadius: 4),
+        ],
+      ),
+      alignment: Alignment.center,
+      child: Icon(
+        locked ? Icons.lock_outline : Icons.lock_open_outlined,
+        color: color,
+        size: 18,
+      ),
+    );
+  }
+}
+
+class _UserMarker extends StatelessWidget {
+  const _UserMarker();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF2196F3).withValues(alpha: 0.25),
+        shape: BoxShape.circle,
+      ),
+      alignment: Alignment.center,
+      child: Container(
+        width: 14,
+        height: 14,
+        decoration: BoxDecoration(
+          color: const Color(0xFF2196F3),
+          shape: BoxShape.circle,
+          border: Border.all(color: Colors.white, width: 2),
+        ),
+      ),
+    );
+  }
+}
+
+class _VisitedAvatar extends StatelessWidget {
+  const _VisitedAvatar({required this.spot});
+
+  final TouristSpot spot;
+
+  @override
+  Widget build(BuildContext context) {
+    final color = spot.markerColor;
+    return Container(
+      width: 36,
+      height: 36,
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.15),
+        shape: BoxShape.circle,
+        border: Border.all(color: color, width: 2),
+      ),
+      alignment: Alignment.center,
+      child: Icon(spot.markerIcon, color: color, size: 18),
+    );
+  }
+}
+
+class _PinPainter extends CustomPainter {
+  _PinPainter({required this.color});
+  final Color color;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()..color = color;
+    final radius = size.width / 2;
+    canvas.drawCircle(Offset(radius, radius), radius, paint);
+    final path = Path()
+      ..moveTo(radius * 0.4, radius * 1.4)
+      ..quadraticBezierTo(radius, size.height, radius * 1.6, radius * 1.4)
+      ..close();
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _PinPainter oldDelegate) =>
+      oldDelegate.color != color;
 }

@@ -268,6 +268,15 @@ func buryCapsule(app *pocketbase.PocketBase) func(*core.RequestEvent) error {
 			return re.JSON(http.StatusBadRequest, map[string]string{"message": err.Error()})
 		}
 
+		// 캡슐을 묻으면 반경 내 관광지를 자동 인증 처리 (요구사항: AR 인증/캡슐 등록 → 완료 마커)
+		if loc, ok := record.Get("location").(map[string]any); ok {
+			lat, _ := toFloat(loc["lat"])
+			lon, _ := toFloat(loc["lon"])
+			if lat != 0 || lon != 0 {
+				tryMarkNearbyTouristSpots(app, re.Auth.Id, record.Id, lat, lon)
+			}
+		}
+
 		return re.JSON(http.StatusOK, map[string]any{
 			"capsule": map[string]any{
 				"id":        record.Id,
