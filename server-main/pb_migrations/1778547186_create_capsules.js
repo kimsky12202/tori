@@ -109,6 +109,18 @@ migrate((app) => {
         type: "date",
         required: false,
       },
+      {
+        name: "created",
+        type: "autodate",
+        onCreate: true,
+        onUpdate: false,
+      },
+      {
+        name: "updated",
+        type: "autodate",
+        onCreate: true,
+        onUpdate: true,
+      },
     ],
     indexes: [
       "CREATE INDEX idx_capsules_users ON capsules (users)",
