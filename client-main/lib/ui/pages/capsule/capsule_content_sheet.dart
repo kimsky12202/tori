@@ -275,8 +275,31 @@ class _CapsuleContentSheetState extends State<CapsuleContentSheet> {
             padding: const EdgeInsets.fromLTRB(20, 16, 4, 0),
             child: Row(
               children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF1FAA8C).withValues(alpha: 0.2),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.view_in_ar, color: Color(0xFF1FAA8C), size: 16),
+                      SizedBox(width: 4),
+                      Text(
+                        'AR 인증',
+                        style: TextStyle(
+                          color: Color(0xFF1FAA8C),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
                 const Text(
-                  '타임캡슐 담기',
+                  '캡슐 묻기',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -339,17 +362,18 @@ class _CapsuleContentSheetState extends State<CapsuleContentSheet> {
                   const SizedBox(width: 12),
                   Expanded(
                     flex: 2,
-                    child: ElevatedButton(
+                    child: ElevatedButton.icon(
                       onPressed: _showConfirmDialog,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFFA14040),
+                        backgroundColor: const Color(0xFF1FAA8C),
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      child: const Text(
-                        '담기',
+                      icon: const Icon(Icons.gps_fixed, color: Colors.white, size: 18),
+                      label: const Text(
+                        '여기에 묻기',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16,

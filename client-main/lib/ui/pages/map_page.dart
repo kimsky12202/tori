@@ -372,8 +372,8 @@ class _MapPageState extends State<MapPage> {
         Marker(
           point: point,
           width: 56,
-          height: 64,
-          alignment: Alignment.topCenter,
+          height: 70,
+          alignment: Alignment.bottomCenter,
           child: GestureDetector(
             onTap: () => _openSpotSheet(spot),
             child: _SpotMarker(spot: spot),
@@ -731,43 +731,57 @@ class _SpotMarker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final visited = spot.visited;
-    final color = visited ? spot.markerColor : const Color(0xFF54514D);
+    final color = visited ? spot.markerColor : const Color(0xFF3F3D3A);
     return Stack(
       clipBehavior: Clip.none,
       alignment: Alignment.topCenter,
       children: [
-        CustomPaint(
-          size: const Size(44, 56),
-          painter: _PinPainter(color: color),
-        ),
+        // 그림자 (꼬리)
         Positioned(
-          top: 8,
-          child: Container(
-            width: 28,
-            height: 28,
-            decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-            alignment: Alignment.center,
-            child: Icon(
-              visited ? spot.markerIcon : Icons.help_outline,
-              color: color,
-              size: 18,
-            ),
+          top: 40,
+          child: CustomPaint(
+            size: const Size(8, 14),
+            painter: _MarkerTailPainter(color: color),
           ),
         ),
+        // 본체 (펜던트)
+        Container(
+          width: 48,
+          height: 48,
+          decoration: BoxDecoration(
+            color: color,
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white, width: 3),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.25),
+                blurRadius: 6,
+                offset: const Offset(0, 3),
+              ),
+            ],
+          ),
+          alignment: Alignment.center,
+          child: Icon(
+            visited ? spot.markerIcon : Icons.help_outline,
+            color: Colors.white,
+            size: 24,
+          ),
+        ),
+        // 체크 배지 (발견 완료시만)
         if (visited)
           Positioned(
-            top: 30,
-            right: 4,
+            top: 34,
+            right: 0,
             child: Container(
-              width: 14,
-              height: 14,
+              width: 18,
+              height: 18,
               decoration: BoxDecoration(
                 color: color,
                 shape: BoxShape.circle,
-                border: Border.all(color: Colors.white, width: 1.5),
+                border: Border.all(color: Colors.white, width: 2),
               ),
               alignment: Alignment.center,
-              child: const Icon(Icons.check, color: Colors.white, size: 9),
+              child: const Icon(Icons.check, color: Colors.white, size: 11),
             ),
           ),
       ],
@@ -848,24 +862,25 @@ class _VisitedAvatar extends StatelessWidget {
   }
 }
 
-class _PinPainter extends CustomPainter {
-  _PinPainter({required this.color});
+class _MarkerTailPainter extends CustomPainter {
+  _MarkerTailPainter({required this.color});
   final Color color;
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = color;
-    final radius = size.width / 2;
-    canvas.drawCircle(Offset(radius, radius), radius, paint);
+    final paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill;
     final path = ui.Path()
-      ..moveTo(radius * 0.4, radius * 1.4)
-      ..quadraticBezierTo(radius, size.height, radius * 1.6, radius * 1.4)
+      ..moveTo(0, 0)
+      ..lineTo(size.width / 2, size.height)
+      ..lineTo(size.width, 0)
       ..close();
     canvas.drawPath(path, paint);
   }
 
   @override
-  bool shouldRepaint(covariant _PinPainter oldDelegate) =>
+  bool shouldRepaint(covariant _MarkerTailPainter oldDelegate) =>
       oldDelegate.color != color;
 }
 

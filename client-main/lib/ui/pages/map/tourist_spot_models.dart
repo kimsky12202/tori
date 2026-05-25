@@ -150,6 +150,14 @@ class TouristSpot {
         return Icons.location_city_outlined;
       case 'park':
         return Icons.park_outlined;
+      case 'beach':
+        return Icons.beach_access_outlined;
+      case 'bridge':
+        return Icons.directions_boat_filled_outlined;
+      case 'temple':
+        return Icons.temple_buddhist_outlined;
+      case 'mountain':
+        return Icons.landscape_outlined;
       default:
         return Icons.place_outlined;
     }
