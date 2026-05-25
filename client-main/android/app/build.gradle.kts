@@ -10,6 +10,20 @@ if (file("google-services.json").exists()) {
     apply(plugin = "com.google.gms.google-services")
 }
 
+// flutter_unity_widget가 app/libs/unity-classes.jar 경로를 참조하므로
+// unityLibrary/libs/unity-classes.jar 를 app/libs/ 로 복사 (configuration 단계에서 즉시 실행).
+run {
+    val source = file("../unityLibrary/libs/unity-classes.jar")
+    if (source.exists()) {
+        val targetDir = file("libs")
+        targetDir.mkdirs()
+        val target = File(targetDir, "unity-classes.jar")
+        if (!target.exists() || target.lastModified() < source.lastModified()) {
+            source.copyTo(target, overwrite = true)
+        }
+    }
+}
+
 android {
     namespace = "com.example.login_test"
     compileSdk = flutter.compileSdkVersion

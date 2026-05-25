@@ -19,3 +19,6 @@ key.properties
 /unityLibrary/src/main/jniLibs/
 /unityLibrary/src/main/jniStaticLibs/
 /unityLibrary/src/main/Il2CppOutputProject/IL2CPP/
+
+# flutter_unity_widget 빌드 시 자동 복사되는 jar (원본은 unityLibrary/libs/)
+/app/libs/unity-classes.jar
