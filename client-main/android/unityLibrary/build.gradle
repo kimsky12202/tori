@@ -103,7 +103,16 @@ def BuildIl2Cpp(String workingDir, String configuration, String architecture, St
 android {
     task BuildIl2CppTask {
         doLast {
-              BuildIl2Cpp(projectDir.toString().replaceAll('\\\\', '/'), 'Debug', 'arm64', 'arm64-v8a', [  ] as String[]);
+            // il2cpp 툴체인은 Unity Editor export 시점에 생성되는 바이너리.
+            // 로컬에 없는 경우(예: Unity 미설치) 빌드를 막지 않고 안내만 출력.
+            // 이 경우 AR/Unity 네이티브 기능은 런타임에 동작하지 않지만 앱은 빌드됨.
+            def osExt = org.gradle.internal.os.OperatingSystem.current().isWindows() ? '.exe' : ''
+            def il2cppExe = file(projectDir.toString() + '/src/main/Il2CppOutputProject/IL2CPP/build/deploy/il2cpp' + osExt)
+            if (!il2cppExe.exists()) {
+                println "[unityLibrary] il2cpp 미발견 (${il2cppExe.absolutePath}) - IL2CPP 빌드 건너뜀. AR 기능은 런타임에 동작하지 않음."
+                return
+            }
+            BuildIl2Cpp(projectDir.toString().replaceAll('\\\\', '/'), 'Debug', 'arm64', 'arm64-v8a', [  ] as String[]);
         }
     }
     afterEvaluate {
