@@ -10,7 +10,7 @@ import 'package:latlong2/latlong.dart';
 import 'ar/ar_screen.dart';
 import 'map/capsule_locked_sheet.dart';
 import 'map/map_config.dart';
-import 'map/spot_detail_sheet.dart';
+import 'map/spot_3d_view_page.dart';
 import 'map/tourist_spot_models.dart';
 import '../services/tourist_spot_api.dart';
 
@@ -236,30 +236,24 @@ class _MapPageState extends State<MapPage> with TickerProviderStateMixin {
 
   void _openSpotSheet(TouristSpot spot) {
     final spotLatLng = _safeLatLng(spot.latitude, spot.longitude);
-    if (spotLatLng != null) {
-      // 위성 스타일로 자동 전환해 입체감 강화 + 부드러운 줌인
-      if (_mapStyle != MapStyle.satellite) {
-        setState(() => _mapStyle = MapStyle.satellite);
-      }
-      _flyTo(spotLatLng, zoom: 18);
-    }
     final user = _userLatLng;
     final isWithinRadius = user != null &&
         spotLatLng != null &&
         _distanceMeters(user, spotLatLng) <= spot.radiusMeters;
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.transparent,
-      builder: (_) => SpotDetailSheet(
-        spot: spot,
-        isWithinRadius: isWithinRadius,
-        isCheckingIn: _checkingIn,
-        onCheckIn: () async {
-          Navigator.of(context).pop();
-          await _checkInSpot(spot, source: 'manual');
-        },
+    Navigator.of(context)
+        .push(
+      MaterialPageRoute(
+        builder: (_) => Spot3DViewPage(
+          spot: spot,
+          isWithinRadius: isWithinRadius,
+          onCheckIn: () => _checkInSpot(spot, source: 'manual'),
+        ),
       ),
-    );
+    )
+        .then((_) {
+      // 3D 페이지에서 돌아왔을 때 인증 상태 갱신 가능
+      _refresh();
+    });
   }
 
   void _openCapsuleSheet(CapsuleMapMarker capsule) {
