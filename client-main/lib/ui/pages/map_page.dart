@@ -10,6 +10,7 @@ import 'package:latlong2/latlong.dart';
 import 'ar/ar_screen.dart';
 import 'capsule/capsule_content_sheet.dart';
 import 'map/capsule_locked_sheet.dart';
+import 'map/map_config.dart';
 import 'map/spot_detail_sheet.dart';
 import 'map/tourist_spot_models.dart';
 import '../services/capsule_api.dart';
@@ -322,6 +323,9 @@ class _MapPageState extends State<MapPage> {
   }
 
   Widget _buildMap() {
+    if (!MapConfig.hasValidToken) {
+      return const _MissingTokenView();
+    }
     final center = _userLatLng ?? _defaultCenter;
     return FlutterMap(
       mapController: _mapController,
@@ -329,15 +333,18 @@ class _MapPageState extends State<MapPage> {
         initialCenter: center,
         initialZoom: 13,
         minZoom: 4,
-        maxZoom: 18,
+        maxZoom: 20,
       ),
       children: [
         TileLayer(
-          urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+          urlTemplate: MapConfig.tileUrlTemplate,
           userAgentPackageName: 'me.toricapsule.app',
-          maxZoom: 19,
+          maxZoom: 22,
+          tileSize: 512,
+          zoomOffset: -1,
         ),
         MarkerLayer(markers: _buildMarkers()),
+        const _MapboxAttribution(),
       ],
     );
   }
@@ -843,4 +850,63 @@ class _PinPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _PinPainter oldDelegate) =>
       oldDelegate.color != color;
+}
+
+class _MissingTokenView extends StatelessWidget {
+  const _MissingTokenView();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: const Color(0xFFF4F1EA),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      alignment: Alignment.center,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Icon(Icons.vpn_key_off_outlined, size: 48, color: Color(0xFF7A756D)),
+          const SizedBox(height: 12),
+          const Text(
+            'Mapbox 토큰이 설정되지 않았어요',
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF2E2B2A),
+            ),
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            '앱 실행 시 --dart-define=MAPBOX_TOKEN=pk.xxx 옵션을 전달해주세요.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 13, color: Color(0xFF54514D)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MapboxAttribution extends StatelessWidget {
+  const _MapboxAttribution();
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.bottomLeft,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 8, bottom: 180),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.85),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: const Text(
+            '© Mapbox © OpenStreetMap',
+            style: TextStyle(fontSize: 10, color: Color(0xFF54514D)),
+          ),
+        ),
+      ),
+    );
+  }
 }
