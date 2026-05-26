@@ -1,0 +1,131 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void PoiLayerBasicBillboard_Start_mBBB18BFE773F9DDAC3894BE2626200E06D27D294 (void);
+extern void PoiLayerBasicBillboard_Update_m38B5EEF194CB5F7514FB2B4A01F6190D91058802 (void);
+extern void PoiLayerBasicBillboard__ctor_m695EE8FC850A0D4D88766B0F24F920CD245A753A (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC871912FCC7AFE799BB20C2A52CC9893136336B5 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m4872CE55F3ADA784EA0759D48E04DE3D763E4576 (void);
+extern void PoiLabelModifier__ctor_m05A83F432AB02910EE289C1E9D07D1E3DF5C0FDD (void);
+extern void PoiLabelModifier_Run_m3340BE9C4B84E1818EB07D61923F386E6DB4C266 (void);
+extern void PoiLabelModifierObject_get__gameObjectModifierImplementation_mDAE1C9D1AC349DE0960ADC614D69D5FB0E1A333E (void);
+extern void PoiLabelModifierObject_ConstructModifier_mB56CD3FFF074585E17CAD4129E10A3B22FA1D507 (void);
+extern void PoiLabelModifierObject__ctor_m4579FE77C255FA190A7FB37CE6FAFF5633401D70 (void);
+extern void U3CU3Ec__cctor_m9F0B07DBC9203EC9C3BEC0DAD5756CC4006C6A68 (void);
+extern void U3CU3Ec__ctor_m9170AAF5969940A993A17206A842069FB3242B3E (void);
+extern void U3CU3Ec_U3C_ctorU3Eb__6_0_m1C1F73D393C178E5B9D9CDE6442F37B05D70FD98 (void);
+extern void SnapMapToLocationProvider_Start_m643AB54108468BEC391FF2D3ECA3D9BA3245CFFA (void);
+extern void SnapMapToLocationProvider__ctor_m081390F0981F71EE99651B6C59CB33146099E208 (void);
+extern void SnapMapToLocationProvider_U3CStartU3Eb__5_0_m9E89213C088F905CBD76B3C0EC91043B07797108 (void);
+extern void SnapTransformToLocationProvider_Start_mA801D67598CF27D173BA060C623A2D938484E3EC (void);
+extern void SnapTransformToLocationProvider_OnDefaultLocationProviderOnOnLocationUpdated_m445444DF14EF23E65B8963D964BDF583300C85AC (void);
+extern void SnapTransformToLocationProvider__ctor_m647B6CA1DF6189033B1FA542B0C3D92C92945ABE (void);
+extern void SnapTransformToLocationProvider_U3CStartU3Eb__4_0_mC4FC29E132DFD9F2042D81BA466D7C9EDCD5A4E4 (void);
+extern void FixedAreaTileProviderBehaviour_get_Core_m94E28E17F339945E7825891F170DF6FE8642CC92 (void);
+extern void FixedAreaTileProviderBehaviour__ctor_m0A711B0795F2925D4D4929AAEE3FF261C44A73CA (void);
+extern void TransformBasedTileProviderBehaviour_get_Core_m6036AD9258C8058BF1CE2473F10105345B744916 (void);
+extern void TransformBasedTileProviderBehaviour__ctor_m7CA8BE5B0A9F5F0D37C0DF752FA5575EFE3B277C (void);
+extern void CameraRotate_Update_m0F2ABDAC8FF0A45A6C1CCFC4EBB7EE57C6F60FDF (void);
+extern void CameraRotate__ctor_mE223FE1E05890E37EB16E26C794C989DA14EF3A4 (void);
+extern void CharacterMovement_Start_m4897DBC979DDA0A121D952F93B4352BE6CDCED4B (void);
+extern void CharacterMovement_Update_mA02759E99F5EDFB9BF0130355AADC01C9087A748 (void);
+extern void CharacterMovement__ctor_m9243783D054155B0DBB6E02D5E1A6F9455966188 (void);
+extern void CharacterMovement_U3CStartU3Eb__8_0_m1F0F778837CF1A246C06EF7BDBE7745BE3C1EB8D (void);
+static Il2CppMethodPointer s_methodPointers[30] = 
+{
+	PoiLayerBasicBillboard_Start_mBBB18BFE773F9DDAC3894BE2626200E06D27D294,
+	PoiLayerBasicBillboard_Update_m38B5EEF194CB5F7514FB2B4A01F6190D91058802,
+	PoiLayerBasicBillboard__ctor_m695EE8FC850A0D4D88766B0F24F920CD245A753A,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC871912FCC7AFE799BB20C2A52CC9893136336B5,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m4872CE55F3ADA784EA0759D48E04DE3D763E4576,
+	PoiLabelModifier__ctor_m05A83F432AB02910EE289C1E9D07D1E3DF5C0FDD,
+	PoiLabelModifier_Run_m3340BE9C4B84E1818EB07D61923F386E6DB4C266,
+	PoiLabelModifierObject_get__gameObjectModifierImplementation_mDAE1C9D1AC349DE0960ADC614D69D5FB0E1A333E,
+	PoiLabelModifierObject_ConstructModifier_mB56CD3FFF074585E17CAD4129E10A3B22FA1D507,
+	PoiLabelModifierObject__ctor_m4579FE77C255FA190A7FB37CE6FAFF5633401D70,
+	U3CU3Ec__cctor_m9F0B07DBC9203EC9C3BEC0DAD5756CC4006C6A68,
+	U3CU3Ec__ctor_m9170AAF5969940A993A17206A842069FB3242B3E,
+	U3CU3Ec_U3C_ctorU3Eb__6_0_m1C1F73D393C178E5B9D9CDE6442F37B05D70FD98,
+	SnapMapToLocationProvider_Start_m643AB54108468BEC391FF2D3ECA3D9BA3245CFFA,
+	SnapMapToLocationProvider__ctor_m081390F0981F71EE99651B6C59CB33146099E208,
+	SnapMapToLocationProvider_U3CStartU3Eb__5_0_m9E89213C088F905CBD76B3C0EC91043B07797108,
+	SnapTransformToLocationProvider_Start_mA801D67598CF27D173BA060C623A2D938484E3EC,
+	SnapTransformToLocationProvider_OnDefaultLocationProviderOnOnLocationUpdated_m445444DF14EF23E65B8963D964BDF583300C85AC,
+	SnapTransformToLocationProvider__ctor_m647B6CA1DF6189033B1FA542B0C3D92C92945ABE,
+	SnapTransformToLocationProvider_U3CStartU3Eb__4_0_mC4FC29E132DFD9F2042D81BA466D7C9EDCD5A4E4,
+	FixedAreaTileProviderBehaviour_get_Core_m94E28E17F339945E7825891F170DF6FE8642CC92,
+	FixedAreaTileProviderBehaviour__ctor_m0A711B0795F2925D4D4929AAEE3FF261C44A73CA,
+	TransformBasedTileProviderBehaviour_get_Core_m6036AD9258C8058BF1CE2473F10105345B744916,
+	TransformBasedTileProviderBehaviour__ctor_m7CA8BE5B0A9F5F0D37C0DF752FA5575EFE3B277C,
+	CameraRotate_Update_m0F2ABDAC8FF0A45A6C1CCFC4EBB7EE57C6F60FDF,
+	CameraRotate__ctor_mE223FE1E05890E37EB16E26C794C989DA14EF3A4,
+	CharacterMovement_Start_m4897DBC979DDA0A121D952F93B4352BE6CDCED4B,
+	CharacterMovement_Update_mA02759E99F5EDFB9BF0130355AADC01C9087A748,
+	CharacterMovement__ctor_m9243783D054155B0DBB6E02D5E1A6F9455966188,
+	CharacterMovement_U3CStartU3Eb__8_0_m1F0F778837CF1A246C06EF7BDBE7745BE3C1EB8D,
+};
+static const int32_t s_InvokerIndices[30] = 
+{
+	8377,
+	8377,
+	8377,
+	14565,
+	8377,
+	3735,
+	3735,
+	8227,
+	6655,
+	8377,
+	14548,
+	8377,
+	6655,
+	8377,
+	8377,
+	6639,
+	8377,
+	6639,
+	8377,
+	6655,
+	8227,
+	8377,
+	8227,
+	8377,
+	8377,
+	8377,
+	8377,
+	8377,
+	8377,
+	6655,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_LocationBasedGame_CodeGenModule;
+const Il2CppCodeGenModule g_LocationBasedGame_CodeGenModule = 
+{
+	"LocationBasedGame.dll",
+	30,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

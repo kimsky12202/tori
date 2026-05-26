@@ -135,16 +135,16 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	18,
 	g_ReversePInvokeWrapperPointers,
-	6059,
+	5919,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	5440,
+	5396,
 	g_Il2CppInvokerPointers,
-	649,
+	648,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	629,
+	621,
 	g_Il2CppInteropData,
 	0,
 	NULL,
@@ -161,9 +161,6 @@ static const Il2CppCodeGenOptions s_Il2CppCodeGenOptions =
 void s_Il2CppCodegenRegistration()
 {
 	il2cpp_codegen_register (&g_CodeRegistration, &g_MetadataRegistration, &s_Il2CppCodeGenOptions);
-	#if IL2CPP_MONO_DEBUGGER
-	il2cpp_codegen_register_debugger_data(NULL);
-	#endif
 }
 #if RUNTIME_IL2CPP
 typedef void (*CodegenRegistrationFunction)();

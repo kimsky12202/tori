@@ -261,141 +261,23 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7
 IL2CPP_EXTERN_C String_t* _stringLiteralF7E6C53D86D8ADC0DB8EFC0A2CD9877CC8BC9914;
 IL2CPP_EXTERN_C String_t* _stringLiteralF96282F5D84FC9B754994ADCFE65DAE2088A7382;
 IL2CPP_EXTERN_C String_t* _stringLiteralFBAD954A5D5DC7494CB8B4AE55EDFCFE125A1338;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonArray_Add_m483471C0CDB8A4438E1A0274845DC6424BDB765D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonArray_GetEnumerator_m38E989DD847BFBA1D9AE6408890EBEC664E0729C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonArray_System_Collections_IEnumerable_GetEnumerator_m36E9AA3609FC3571D00A9C885C12A578D15432D7_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonArray__ctor_m3121DAA5995AA53B27FCE79E5F69D13131F1F9F1_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonArray_get_Type_mCC68071DB9C64C070101B2633053632727FB9382_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_CalculateSizeWithLength_mB26898787AEA883063A203D7B1C2325586B6E737_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_CalculateSize_m2AF1B2832ECDC9964A31AA22CD528C0514BCAE46_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_CalculateSize_mC09EDD18FAF0B2E65A36FCC6D0C7615EE1544907_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_Close_m16C6400A2D52FFC66BC3F29D7A94373EDCB6291C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_Flush_m8844BC6FFEE6C0BE26F4D807110A1F4C1E6658DA_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_WriteString_m8614BA54CB21C5D68D63EE7B4377049F8C838801_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_WriteTokenInternal_m54C0EA96679D81C5022FD97C4499657E1D38DA7E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_WriteToken_m1CBE5AB86FEB5C2399287FEAEBFB80F9094A48E9_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_WriteUtf8Bytes_m8D5ECCD51C6AB60CE140EF0AF33E9E5C6A1485AB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter__cctor_mA6BEC2932FB2A544F7527BCB1401C139932B39B2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter__ctor_mD40C3447EF11061CE8EEE41BB5ED7A874102DC3C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinary__ctor_m5B3120436DF99BD5D9DE02D2695CD9DE2CE7BB5B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonObjectId__ctor_m755CAEE2BE89A3B5A751FE980FB1A333B3D603C8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObjectId_get_Value_mEBD0BBDDA460C3B1ECFFBD7B64C709172C7F14CD_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObject_Add_mC5FD9CC9FC974FC4D7B10981A33291E88DB9DC79_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObject_GetEnumerator_mD0C11E8BAC09FB62CA08FF674E3F7F23690AE14D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObject_System_Collections_IEnumerable_GetEnumerator_m6C7320F7B08967EF6FF0D1EB4681408550A44D7C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObject__ctor_m630E32FEFB85ABC73DA890C946486161162E0BDA_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonObject_get_Type_m970C3BD8AC7D9844A62BE0C687DCF270E784D8ED_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonProperty__ctor_mFC963BA0F736C7A11FE68BB3A4DDE63A99B3A54C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_BytesInSequence_mFEDFB2E86DEB1DE9F3773FE802BD6D37BBC1A36E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_Close_mD087C7D1ACBF9FEB47490BA47BE24298DFD86EC5_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_EnsureBuffers_mC7DD59EA3A760B60368F4A117D73F4448F706BB1_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_GetLastFullCharStop_m5F12D814D034886A5A2CA2FADA4B8411D0FE90AD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_GetString_mB3FD61F039F2636EE8B6B4BF2CAF84A26E4DDBFC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_PopContext_m63825894764D148A8EE7451048A0761FF27BE312_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_PushContext_m1AB78E117227021B3B7F29D571D58BB424B3A7EF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadBinary_m4A4F52AE9037A613C091BF93066D918478C2FECF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadByte_mC6BD5BEBF68FF9ECC8741786CE7A62B50CACAAE4_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadBytes_m1CC1F7104F11C353A30134E0AA3D66B3F52938F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadCodeWScope_m0DA7805CE5A3D1CC83E1554C8015207538D1FF3E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadDouble_m4E7917E24274C4A8DE38DAA6DAD13B019AE75C52_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadElement_m51016B8553A73DB79F38CF122BF6292662F4D754_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadInt32_m403168A3B3CA3CC5FEA5459185257E8AF00FF986_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadInt64_m3CD355565907B98481732EC6A91102F89CE1FF02_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadLengthString_m905B05A13227D4A2ECBFD9379E27D664A8D071AA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadNormal_m048652A5459D2B5D052FB068C5EC478734122EBF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadReference_mB9A96BD71CDF91482061F6C9074C2A83CB56E5F4_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadString_m43756951ED9A74FE856F42E2CF1A1BE2AE341100_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadType_m1568AE4968EFA67EF81D622164A9AD3665E539DB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_ReadType_m609B4018D61DC17479EA954CAB7A4CF38F9ED691_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_Read_mFEBE910985E708117F1DFB084E839D4EC4432C70_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader__cctor_m0DD14E39C1F1B4DE1A4C13B0DEFAE390C729627F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader__ctor_m5991340F78C61D5938CF823F1C7D309FEF4037FC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader__ctor_m8DDC7432406DEBDC42DC0930E73ADC28E767C92B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader__ctor_mA390BC9C2C09F1B1A97A0F26430A1E1149D3AE9F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader__ctor_mF744C7E937F79AB3421D775693B583EB820168BF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_get_JsonNet35BinaryCompatibility_m429C63D604BDC2BBF8CFE35248B4D41371C1DAFE_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_get_ReadRootValueAsArray_mA61EBEBB08A8483EFB848CC9FD3476F413FF0F24_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_set_DateTimeKindHandling_m9D015B7C7A3BD6C2C5418B42F7C0E1BBFB510E84_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_set_JsonNet35BinaryCompatibility_mE3AB448A934B558F6A32630E0D70440616570807_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonReader_set_ReadRootValueAsArray_m2FC5A40C553833F78193274168325865E54ABABA_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonRegex__ctor_mA823184E2E1262D62F38DC5D1ACC130B5B0EEE99_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonRegex_get_Type_mE72E10F4DBAAC4714F12F2DC916E927A1EE72C3A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonString__ctor_mA28B714E7D11E7131A16CB152D171CA7A4A6BD56_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonToken__ctor_m04A0C7B9070DF73C0689038C8E2593C5FC18F8AA_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonValue__ctor_m316255047E379B29CD5D70DBCDF98BAD4DB4C695_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonValue_get_Type_m02508F5B41591FB05A329FB62FF25DBC56BC200A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_AddParent_m5733DE6024C0F5F3DF8B2638EB25D9DF15AB2761_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_AddToken_m3B3692A74D77D31F63999E7E77DD4386B74A9901_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_AddValue_m1EEA7A7873B2D58AAC37EB24AB9CFB3F81DB29A5_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_Close_m8D322FE76531EA2599FD4F4C31540532D0A13A42_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_Flush_m9E2FCED7F3C90BB693529D62635D1DAF11685F08_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_RemoveParent_m76AEE3E680B0AA556D984C4D7AE1848C198AF103_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteComment_m43D84D85207162EF1083D96254809FD5422D46C3_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteEnd_mF35070E1C6EC127F41F69707FB949FE90324F439_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteNull_mFFF707F753F8ABDDB465D0B4E961D64DC7887586_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteObjectId_mF118E0F427F73A1FEAFB3853F056E9BE87524452_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WritePropertyName_mFE66ED7A0D014936611D49C5F53A490D717D721E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteRawValue_m12591A651F07D961A685E3C463098ED87557CB02_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteRaw_m166F2B79C505DA68A9A52275A9DF26B397A4460D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteRegex_m5A72DD206C8BA845F9F2B6AAC9BF61AC6480B71E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteStartArray_m843BECB153A090E2412988023B9B2D7412D95DA2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteStartConstructor_m1F88ADAEF8A51724CCBEDBF45591F27C337A9B15_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteStartObject_mE29202DE49A43E8A76A3E230307B42D042076313_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteUndefined_m08D4E492179735F9F3857ACCB7153F71A9F45A72_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m03EFC7DAE130F7060ABE5AF7EB2FCF2E1E19ED62_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m1C861DC3F9139376E4A6C2677D367DC71F54CE19_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m244AEDCA1E419CEFAC8A082D4B9A0C4689FF2CCE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m253E004DDC355C900E5146C875EFEBFE0B808CFD_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m2FC79561497CBDF988D2EF722E22903E63ECDC57_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m3CCC473FC5D5CDB2FA5A096112C3680B7AAD13D8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m5896FAE2E7C7B6F78920F6B3D024952066069434_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m61CDDC4C0D0229BB4C6C7423B4A9425E4F7DEC2E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m6DB75597C66D7A25306CDE9F94D404F71B13B595_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m7CED6666FFC962781DA90B7EF454DDDDF199E5F1_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m80C95A43E5F729592340D263DB7517C40235C14A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_m8CAB1650E127C21B630B95315A4B16D28F096F4E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mA18524C3F7989C780934E01266E635D06837AE51_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mA83F23BC4B8D4AC8C71C95F7BD91275B61ACCEFC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mAF1D91264588FB657ADF93788EE460C24B6F76C3_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mD25E3A6ADCA02C5BEC592E5171BE3963965BD71E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mD623680FD8D563F2713B13D88D9DC4BBF1A5B939_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mE26EACDC1C523AA208225AB9FACF48D6EE9A939B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mE2C9B27E787A7A8BDB1595D45E225AAC49E50BF7_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mF23F9970B41FBBAF8D989EDEADF6D850737A94F3_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_WriteValue_mFD86C81134810D4CD85941746F697C0A3CAD8A5C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter__ctor_m9A68F285FFC9770E242BDDDEBF8E6F7D4FC22F0E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter__ctor_mB8DA2F2E87909A79490FBDF3FCD82D9C14D56B24_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_get_DateTimeKindHandling_m97179D0C081FB37FC144909FEE6FC4B2146B8E8F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* BsonWriter_set_DateTimeKindHandling_m248E2BDCA2BBAAC774B31003C5F399D2B5D9DAE7_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ContainerContext__ctor_m1C2D964213E25068CF24D94D74E2D9D5BB60061B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* JsonReader_get_CloseInput_m5D28FC12BD22B62AA1E493BC7A77402F1AA26DE4_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* JsonReader_get_CurrentState_m2B6FA669883053CDABF108A980F808CDC9F13699_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* JsonWriter_get_CloseOutput_m0A40D11FF244B8766FA5A2467C78024B6E2F4736_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* JsonWriter_get_DateTimeZoneHandling_m70A3776234605D953796332656844492C164F799_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m05A778DDB06E3015BA3B2B539CB6360D44308F65_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m7B3928D9D175A2FC23AD66D3F2E0BC9200D98E5D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mFB02AD1C6DBE2CCEC757E8633ED0353BFCA3A415_RuntimeMethod_var;
@@ -410,7 +292,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mF6B5797FA7FC75AAAE66FC325B
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_RuntimeMethod_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com;
@@ -1660,14 +1541,6 @@ inline void List_1_AddWithResize_mA6DFDBC2B22D6318212C6989A34784BD8303AF33 (List
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->___U3CDateTimeKindHandlingU3Ek__BackingField;
 		return L_0;
@@ -1675,14 +1548,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_get_DateTimeKindHand
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5 (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->___U3CDateTimeKindHandlingU3Ek__BackingField = L_0;
@@ -1691,14 +1556,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_set_DateTimeKindHandlin
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter__ctor_mD40C3447EF11061CE8EEE41BB5ED7A874102DC3C (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* ___0_writer, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter__ctor_mD40C3447EF11061CE8EEE41BB5ED7A874102DC3C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter__ctor_mD40C3447EF11061CE8EEE41BB5ED7A874102DC3C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_inline(__this, 1, NULL);
@@ -1710,14 +1567,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter__ctor_mD40C3447EF11061C
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_Flush_m8844BC6FFEE6C0BE26F4D807110A1F4C1E6658DA (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_Flush_m8844BC6FFEE6C0BE26F4D807110A1F4C1E6658DA_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_Flush_m8844BC6FFEE6C0BE26F4D807110A1F4C1E6658DA_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_0 = __this->____writer;
 		NullCheck(L_0);
@@ -1727,14 +1576,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_Flush_m8844BC6FFEE6C0BE
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_Close_m16C6400A2D52FFC66BC3F29D7A94373EDCB6291C (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_Close_m16C6400A2D52FFC66BC3F29D7A94373EDCB6291C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_Close_m16C6400A2D52FFC66BC3F29D7A94373EDCB6291C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* L_0 = __this->____writer;
 		NullCheck(L_0);
@@ -1744,14 +1585,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_Close_m16C6400A2D52FFC6
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_WriteToken_m1CBE5AB86FEB5C2399287FEAEBFB80F9094A48E9 (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* ___0_t, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_WriteToken_m1CBE5AB86FEB5C2399287FEAEBFB80F9094A48E9_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_WriteToken_m1CBE5AB86FEB5C2399287FEAEBFB80F9094A48E9_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_t;
 		int32_t L_1;
@@ -1768,7 +1601,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_WriteTokenInternal_m54C
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_WriteTokenInternal_m54C0EA96679D81C5022FD97C4499657E1D38DA7E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1_il2cpp_TypeInfo_var);
@@ -1813,8 +1645,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_WriteTokenInternal_m54C
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_19 = NULL;
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_20 = NULL;
 	BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* V_21 = NULL;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_WriteTokenInternal_m54C0EA96679D81C5022FD97C4499657E1D38DA7E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_t;
 		NullCheck(L_0);
@@ -1925,7 +1755,6 @@ IL_005c:
 
 FINALLY_00db:
 			{
-				STORE_TRY_ID(methodExecutionContext, -1);
 				{
 					RuntimeObject* L_9 = V_2;
 					if (!L_9)
@@ -1947,14 +1776,12 @@ IL_00e4:
 		});
 		try
 		{
-			STORE_TRY_ID(methodExecutionContext, 0);
 			{
 				goto IL_00d1_1;
 			}
 
 IL_007d_1:
 			{
-				CHECK_PAUSE_POINT;
 				RuntimeObject* L_11 = V_2;
 				NullCheck(L_11);
 				BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* L_12;
@@ -2047,7 +1874,6 @@ IL_00f2:
 
 FINALLY_0173:
 			{
-				STORE_TRY_ID(methodExecutionContext, -1);
 				{
 					RuntimeObject* L_35 = V_7;
 					if (!L_35)
@@ -2069,14 +1895,12 @@ IL_017e:
 		});
 		try
 		{
-			STORE_TRY_ID(methodExecutionContext, 1);
 			{
 				goto IL_0168_1;
 			}
 
 IL_011b_1:
 			{
-				CHECK_PAUSE_POINT;
 				RuntimeObject* L_37 = V_7;
 				NullCheck(L_37);
 				BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_38;
@@ -2431,13 +2255,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_WriteString_m8614BA54CB
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_WriteString_m8614BA54CB21C5D68D63EE7B4377049F8C838801_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_GetValueOrDefault_m8D130DB7F2A1E694736B449176F9C26DB456597B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_WriteString_m8614BA54CB21C5D68D63EE7B4377049F8C838801_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0;
 		L_0 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&___2_calculatedlengthPrefix), Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
@@ -2470,14 +2291,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter_WriteUtf8Bytes_m8D5ECCD
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_WriteUtf8Bytes_m8D5ECCD51C6AB60CE140EF0AF33E9E5C6A1485AB_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_WriteUtf8Bytes_m8D5ECCD51C6AB60CE140EF0AF33E9E5C6A1485AB_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		String_t* L_0 = ___0_s;
 		if (!L_0)
@@ -2548,14 +2366,6 @@ IL_0069:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_CalculateSize_m2AF1B2832ECDC9964A31AA22CD528C0514BCAE46 (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, int32_t ___0_stringByteCount, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_CalculateSize_m2AF1B2832ECDC9964A31AA22CD528C0514BCAE46_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_CalculateSize_m2AF1B2832ECDC9964A31AA22CD528C0514BCAE46_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_stringByteCount;
 		return ((int32_t)il2cpp_codegen_add(L_0, 1));
@@ -2563,14 +2373,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_CalculateSize_m2AF1B
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_CalculateSizeWithLength_mB26898787AEA883063A203D7B1C2325586B6E737 (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, int32_t ___0_stringByteCount, bool ___1_includeSize, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_CalculateSizeWithLength_mB26898787AEA883063A203D7B1C2325586B6E737_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_CalculateSizeWithLength_mB26898787AEA883063A203D7B1C2325586B6E737_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	int32_t G_B3_0 = 0;
 	{
 		bool L_0 = ___1_includeSize;
@@ -2601,7 +2403,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_CalculateSize_mC09ED
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_CalculateSize_mC09EDD18FAF0B2E65A36FCC6D0C7615EE1544907_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB_il2cpp_TypeInfo_var);
@@ -2631,8 +2432,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_CalculateSize_mC09ED
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_13 = NULL;
 	BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* V_14 = NULL;
 	int32_t V_15 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_CalculateSize_mC09EDD18FAF0B2E65A36FCC6D0C7615EE1544907_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* G_B25_0 = NULL;
 	BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* G_B24_0 = NULL;
 	int32_t G_B26_0 = 0;
@@ -2741,7 +2540,6 @@ IL_005c:
 
 FINALLY_00ac:
 			{
-				STORE_TRY_ID(methodExecutionContext, -1);
 				{
 					RuntimeObject* L_6 = V_3;
 					if (!L_6)
@@ -2763,14 +2561,12 @@ IL_00b5:
 		});
 		try
 		{
-			STORE_TRY_ID(methodExecutionContext, 0);
 			{
 				goto IL_00a2_1;
 			}
 
 IL_006e_1:
 			{
-				CHECK_PAUSE_POINT;
 				RuntimeObject* L_8 = V_3;
 				NullCheck(L_8);
 				BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* L_9;
@@ -2849,7 +2645,6 @@ IL_00c3:
 
 FINALLY_011d:
 			{
-				STORE_TRY_ID(methodExecutionContext, -1);
 				{
 					RuntimeObject* L_29 = V_9;
 					if (!L_29)
@@ -2871,14 +2666,12 @@ IL_0128:
 		});
 		try
 		{
-			STORE_TRY_ID(methodExecutionContext, 1);
 			{
 				goto IL_0112_1;
 			}
 
 IL_00dd_1:
 			{
-				CHECK_PAUSE_POINT;
 				RuntimeObject* L_31 = V_9;
 				NullCheck(L_31);
 				BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_32;
@@ -3107,13 +2900,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter__cctor_mA6BEC2932FB2A54
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter__cctor_mA6BEC2932FB2A544F7527BCB1401C139932B39B2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UTF8Encoding_t90B56215A1B0B7ED5CDEA772E695F0DDAFBCD3BE_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter__cctor_mA6BEC2932FB2A544F7527BCB1401C139932B39B2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		UTF8Encoding_t90B56215A1B0B7ED5CDEA772E695F0DDAFBCD3BE* L_0 = (UTF8Encoding_t90B56215A1B0B7ED5CDEA772E695F0DDAFBCD3BE*)il2cpp_codegen_object_new(UTF8Encoding_t90B56215A1B0B7ED5CDEA772E695F0DDAFBCD3BE_il2cpp_TypeInfo_var);
 		UTF8Encoding__ctor_mBCC79DB57729512321FA4F0E17342F0D1A43EA34(L_0, (bool)0, NULL);
@@ -3132,14 +2922,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinaryWriter__cctor_mA6BEC2932FB2A54
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_get_JsonNet35BinaryCompatibility_m429C63D604BDC2BBF8CFE35248B4D41371C1DAFE (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_get_JsonNet35BinaryCompatibility_m429C63D604BDC2BBF8CFE35248B4D41371C1DAFE_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_get_JsonNet35BinaryCompatibility_m429C63D604BDC2BBF8CFE35248B4D41371C1DAFE_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = __this->____jsonNet35BinaryCompatibility;
 		return L_0;
@@ -3147,14 +2929,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_get_JsonNet35BinaryCompatibil
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_set_JsonNet35BinaryCompatibility_mE3AB448A934B558F6A32630E0D70440616570807 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, bool ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_set_JsonNet35BinaryCompatibility_mE3AB448A934B558F6A32630E0D70440616570807_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_set_JsonNet35BinaryCompatibility_mE3AB448A934B558F6A32630E0D70440616570807_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = ___0_value;
 		__this->____jsonNet35BinaryCompatibility = L_0;
@@ -3163,14 +2937,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_set_JsonNet35BinaryCompatibil
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_get_ReadRootValueAsArray_mA61EBEBB08A8483EFB848CC9FD3476F413FF0F24 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_get_ReadRootValueAsArray_mA61EBEBB08A8483EFB848CC9FD3476F413FF0F24_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_get_ReadRootValueAsArray_mA61EBEBB08A8483EFB848CC9FD3476F413FF0F24_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = __this->____readRootValueAsArray;
 		return L_0;
@@ -3178,14 +2944,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_get_ReadRootValueAsArray_mA61
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_set_ReadRootValueAsArray_m2FC5A40C553833F78193274168325865E54ABABA (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, bool ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_set_ReadRootValueAsArray_m2FC5A40C553833F78193274168325865E54ABABA_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_set_ReadRootValueAsArray_m2FC5A40C553833F78193274168325865E54ABABA_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = ___0_value;
 		__this->____readRootValueAsArray = L_0;
@@ -3194,14 +2952,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_set_ReadRootValueAsArray_m2FC
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____dateTimeKindHandling;
 		return L_0;
@@ -3209,14 +2959,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_get_DateTimeKindHandling_m
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_set_DateTimeKindHandling_m9D015B7C7A3BD6C2C5418B42F7C0E1BBFB510E84 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_set_DateTimeKindHandling_m9D015B7C7A3BD6C2C5418B42F7C0E1BBFB510E84_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_set_DateTimeKindHandling_m9D015B7C7A3BD6C2C5418B42F7C0E1BBFB510E84_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->____dateTimeKindHandling = L_0;
@@ -3225,14 +2967,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_set_DateTimeKindHandling_m9D0
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__ctor_mA390BC9C2C09F1B1A97A0F26430A1E1149D3AE9F (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader__ctor_mA390BC9C2C09F1B1A97A0F26430A1E1149D3AE9F_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader__ctor_mA390BC9C2C09F1B1A97A0F26430A1E1149D3AE9F_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___0_stream;
 		BsonReader__ctor_mF744C7E937F79AB3421D775693B583EB820168BF(__this, L_0, (bool)0, 2, NULL);
@@ -3241,14 +2975,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__ctor_mA390BC9C2C09F1B1A97A0F
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__ctor_m8DDC7432406DEBDC42DC0930E73ADC28E767C92B (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* ___0_reader, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader__ctor_m8DDC7432406DEBDC42DC0930E73ADC28E767C92B_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader__ctor_m8DDC7432406DEBDC42DC0930E73ADC28E767C92B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = ___0_reader;
 		BsonReader__ctor_m5991340F78C61D5938CF823F1C7D309FEF4037FC(__this, L_0, (bool)0, 2, NULL);
@@ -3261,14 +2987,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__ctor_mF744C7E937F79AB3421D77
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader__ctor_mF744C7E937F79AB3421D775693B583EB820168BF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m51ABD0EBEBE9673A2608650D331CEE679D5029FC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t944CCF3A156F251D4FD98B25EC08251DB21ADBC9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF7E6C53D86D8ADC0DB8EFC0A2CD9877CC8BC9914);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader__ctor_mF744C7E937F79AB3421D775693B583EB820168BF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonReader__ctor_m1C65CDB90A8B108668938BBE17329FEC76D62C27(__this, NULL);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___0_stream;
@@ -3294,14 +3017,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__ctor_m5991340F78C61D5938CF82
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader__ctor_m5991340F78C61D5938CF823F1C7D309FEF4037FC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m51ABD0EBEBE9673A2608650D331CEE679D5029FC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t944CCF3A156F251D4FD98B25EC08251DB21ADBC9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralECAC83771A00C701043A940F621CC1C765D30D31);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader__ctor_m5991340F78C61D5938CF823F1C7D309FEF4037FC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonReader__ctor_m1C65CDB90A8B108668938BBE17329FEC76D62C27(__this, NULL);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = ___0_reader;
@@ -3322,14 +3042,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__ctor_m5991340F78C61D5938CF82
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_ReadElement_m51016B8553A73DB79F38CF122BF6292662F4D754 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadElement_m51016B8553A73DB79F38CF122BF6292662F4D754_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadElement_m51016B8553A73DB79F38CF122BF6292662F4D754_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int8_t L_0;
 		L_0 = BsonReader_ReadType_m609B4018D61DC17479EA954CAB7A4CF38F9ED691(__this, NULL);
@@ -3341,21 +3053,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_ReadElement_m51016B8553A
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_Read_mFEBE910985E708117F1DFB084E839D4EC4432C70 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_Read_mFEBE910985E708117F1DFB084E839D4EC4432C70_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	bool V_0 = false;
 	int32_t V_1 = 0;
 	bool V_2 = false;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_Read_mFEBE910985E708117F1DFB084E839D4EC4432C70_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
 	{
-		STORE_TRY_ID(methodExecutionContext, 0);
 		{
 			int32_t L_0 = __this->____bsonReaderState;
 			V_1 = L_0;
@@ -3475,7 +3178,6 @@ IL_007d_1:
 
 CATCH_0081:
 	{
-		STORE_TRY_ID(methodExecutionContext, -1);
 		EndOfStreamException_t6B6A2609418A69523CBEF305228B18E0E5778028* L_12 = ((EndOfStreamException_t6B6A2609418A69523CBEF305228B18E0E5778028*)IL2CPP_GET_ACTIVE_EXCEPTION(EndOfStreamException_t6B6A2609418A69523CBEF305228B18E0E5778028*));;
 		JsonReader_SetToken_m9CB3201AB80BD12AF5490EE38B0AB1E667D5757B(__this, 0, NULL);
 		V_2 = (bool)0;
@@ -3491,14 +3193,6 @@ IL_008d:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_Close_mD087C7D1ACBF9FEB47490BA47BE24298DFD86EC5 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_Close_mD087C7D1ACBF9FEB47490BA47BE24298DFD86EC5_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_Close_mD087C7D1ACBF9FEB47490BA47BE24298DFD86EC5_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonReader_Close_m68AD33DBE5DA0990DB82A21F3AB2D1F91AE49F84(__this, NULL);
 		bool L_0;
@@ -3531,7 +3225,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_ReadCodeWScope_m0DA7805CE5A3D
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadCodeWScope_m0DA7805CE5A3D1CC83E1554C8015207538D1FF3E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral15F434DE6EB05B31D391B12B5A8516BD141B7A93);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD63216A99D4FD683AD72F25F707C7D4A188E2029);
@@ -3539,8 +3232,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_ReadCodeWScope_m0DA7805CE5A3D
 	}
 	int32_t V_0 = 0;
 	ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* V_1 = NULL;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadCodeWScope_m0DA7805CE5A3D1CC83E1554C8015207538D1FF3E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	bool G_B10_0 = false;
 	bool G_B8_0 = false;
 	bool G_B9_0 = false;
@@ -3676,14 +3367,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_ReadReference_mB9A96BD71CDF91
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadReference_mB9A96BD71CDF91482061F6C9074C2A83CB56E5F4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA05B74022DC98A669248CD353ADDBD7AADAD4AA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF96282F5D84FC9B754994ADCFE65DAE2088A7382);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadReference_mB9A96BD71CDF91482061F6C9074C2A83CB56E5F4_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0;
 		L_0 = JsonReader_get_CurrentState_m2B6FA669883053CDABF108A980F808CDC9F13699_inline(__this, NULL);
@@ -3819,7 +3507,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_ReadNormal_m048652A5459D2B5D0
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadNormal_m048652A5459D2B5D052FB068C5EC478734122EBF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -3829,8 +3516,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonReader_ReadNormal_m048652A5459D2B5D0
 	int32_t V_3 = 0;
 	ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* V_4 = NULL;
 	int32_t V_5 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadNormal_m048652A5459D2B5D052FB068C5EC478734122EBF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	int32_t G_B5_0 = 0;
 	int32_t G_B8_0 = 0;
 	int32_t G_B25_0 = 0;
@@ -4112,14 +3797,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_PopContext_m63825894764D148A8
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_PopContext_m63825894764D148A8EE7451048A0761FF27BE312_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_m157C47B733293E34DDC19F26D66D2C959F8251FE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m543633880DCEC6159BABF4A6C35B9FFD0F7D5079_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mF6B5797FA7FC75AAAE66FC325B93A5C2AC311E98_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_PopContext_m63825894764D148A8EE7451048A0761FF27BE312_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_t944CCF3A156F251D4FD98B25EC08251DB21ADBC9* L_0 = __this->____stack;
 		List_1_t944CCF3A156F251D4FD98B25EC08251DB21ADBC9* L_1 = __this->____stack;
@@ -4163,12 +3845,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_PushContext_m1AB78E117227021B
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_PushContext_m1AB78E117227021B3B7F29D571D58BB424B3A7EF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mFB02AD1C6DBE2CCEC757E8633ED0353BFCA3A415_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_PushContext_m1AB78E117227021B3B7F29D571D58BB424B3A7EF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_t944CCF3A156F251D4FD98B25EC08251DB21ADBC9* L_0 = __this->____stack;
 		ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* L_1 = ___0_newContext;
@@ -4182,14 +3861,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_PushContext_m1AB78E117227021B
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t BsonReader_ReadByte_mC6BD5BEBF68FF9ECC8741786CE7A62B50CACAAE4 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadByte_mC6BD5BEBF68FF9ECC8741786CE7A62B50CACAAE4_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadByte_mC6BD5BEBF68FF9ECC8741786CE7A62B50CACAAE4_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B(__this, 1, NULL);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = __this->____reader;
@@ -4205,7 +3876,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_ReadType_m1568AE4968EFA67EF81
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadType_m1568AE4968EFA67EF81D622164A9AD3665E539DB_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
@@ -4234,8 +3904,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_ReadType_m1568AE4968EFA67EF81
 	ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* V_11 = NULL;
 	ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* V_12 = NULL;
 	int32_t V_13 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadType_m1568AE4968EFA67EF81D622164A9AD3665E539DB_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	RuntimeObject* G_B11_0 = NULL;
 	{
 		int8_t L_0 = ___0_type;
@@ -4604,15 +4272,7 @@ IL_0222:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* BsonReader_ReadBinary_m4A4F52AE9037A613C091BF93066D918478C2FECF (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, uint8_t* ___0_binaryType, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadBinary_m4A4F52AE9037A613C091BF93066D918478C2FECF_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	int32_t V_0 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadBinary_m4A4F52AE9037A613C091BF93066D918478C2FECF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0;
 		L_0 = BsonReader_ReadInt32_m403168A3B3CA3CC5FEA5459185257E8AF00FF986(__this, NULL);
@@ -4654,7 +4314,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_ReadString_m43756951ED9A
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadString_m43756951ED9A74FE856F42E2CF1A1BE2AE341100_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringBuilder_t_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -4667,8 +4326,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_ReadString_m43756951ED9A
 	int32_t V_6 = 0;
 	int32_t V_7 = 0;
 	int32_t V_8 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadString_m43756951ED9A74FE856F42E2CF1A1BE2AE341100_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonReader_EnsureBuffers_mC7DD59EA3A760B60368F4A117D73F4448F706BB1(__this, NULL);
 		V_0 = (StringBuilder_t*)NULL;
@@ -4678,7 +4335,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_ReadString_m43756951ED9A
 
 IL_000c:
 	{
-		CHECK_PAUSE_POINT;
 		int32_t L_0 = V_2;
 		V_3 = L_0;
 		goto IL_001e;
@@ -4686,7 +4342,6 @@ IL_000c:
 
 IL_0010:
 	{
-		CHECK_PAUSE_POINT;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = __this->____byteBuffer;
 		int32_t L_2 = V_3;
 		int32_t L_3 = L_2;
@@ -4837,15 +4492,7 @@ IL_010b:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_ReadLengthString_m905B05A13227D4A2ECBFD9379E27D664A8D071AA (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadLengthString_m905B05A13227D4A2ECBFD9379E27D664A8D071AA_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	int32_t V_0 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadLengthString_m905B05A13227D4A2ECBFD9379E27D664A8D071AA_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0;
 		L_0 = BsonReader_ReadInt32_m403168A3B3CA3CC5FEA5459185257E8AF00FF986(__this, NULL);
@@ -4867,7 +4514,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_GetString_mB3FD61F039F26
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_GetString_mB3FD61F039F2636EE8B6B4BF2CAF84A26E4DDBFC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringBuilder_t_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -4880,8 +4526,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* BsonReader_GetString_mB3FD61F039F26
 	int32_t V_5 = 0;
 	int32_t V_6 = 0;
 	int32_t V_7 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_GetString_mB3FD61F039F2636EE8B6B4BF2CAF84A26E4DDBFC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	int32_t G_B6_0 = 0;
 	{
 		int32_t L_0 = ___0_length;
@@ -4905,7 +4549,6 @@ IL_0009:
 
 IL_0015:
 	{
-		CHECK_PAUSE_POINT;
 		int32_t L_2 = ___0_length;
 		int32_t L_3 = V_1;
 		int32_t L_4 = V_2;
@@ -5061,16 +4704,8 @@ IL_00fc:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_GetLastFullCharStop_m5F12D814D034886A5A2CA2FADA4B8411D0FE90AD (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, int32_t ___0_start, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_GetLastFullCharStop_m5F12D814D034886A5A2CA2FADA4B8411D0FE90AD_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_GetLastFullCharStop_m5F12D814D034886A5A2CA2FADA4B8411D0FE90AD_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_start;
 		V_0 = L_0;
@@ -5080,7 +4715,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_GetLastFullCharStop_m5F12D
 
 IL_0006:
 	{
-		CHECK_PAUSE_POINT;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = __this->____byteBuffer;
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
@@ -5150,12 +4784,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_BytesInSequence_mFEDFB2E86
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_BytesInSequence_mFEDFB2E86DEB1DE9F3773FE802BD6D37BBC1A36E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_BytesInSequence_mFEDFB2E86DEB1DE9F3773FE802BD6D37BBC1A36E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint8_t L_0 = ___0_b;
 		il2cpp_codegen_runtime_class_init_inline(BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423_il2cpp_TypeInfo_var);
@@ -5269,14 +4900,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_EnsureBuffers_mC7DD59EA3A760B
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_EnsureBuffers_mC7DD59EA3A760B60368F4A117D73F4448F706BB1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_EnsureBuffers_mC7DD59EA3A760B60368F4A117D73F4448F706BB1_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->____byteBuffer;
 		if (L_0)
@@ -5318,14 +4946,6 @@ IL_003c:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double BsonReader_ReadDouble_m4E7917E24274C4A8DE38DAA6DAD13B019AE75C52 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadDouble_m4E7917E24274C4A8DE38DAA6DAD13B019AE75C52_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadDouble_m4E7917E24274C4A8DE38DAA6DAD13B019AE75C52_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B(__this, 8, NULL);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = __this->____reader;
@@ -5337,14 +4957,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double BsonReader_ReadDouble_m4E7917E24274C4A
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_ReadInt32_m403168A3B3CA3CC5FEA5459185257E8AF00FF986 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadInt32_m403168A3B3CA3CC5FEA5459185257E8AF00FF986_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadInt32_m403168A3B3CA3CC5FEA5459185257E8AF00FF986_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B(__this, 4, NULL);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = __this->____reader;
@@ -5356,14 +4968,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonReader_ReadInt32_m403168A3B3CA3CC
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t BsonReader_ReadInt64_m3CD355565907B98481732EC6A91102F89CE1FF02 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadInt64_m3CD355565907B98481732EC6A91102F89CE1FF02_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadInt64_m3CD355565907B98481732EC6A91102F89CE1FF02_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B(__this, 8, NULL);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = __this->____reader;
@@ -5375,14 +4979,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t BsonReader_ReadInt64_m3CD355565907B98
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonReader_ReadType_m609B4018D61DC17479EA954CAB7A4CF38F9ED691 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadType_m609B4018D61DC17479EA954CAB7A4CF38F9ED691_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadType_m609B4018D61DC17479EA954CAB7A4CF38F9ED691_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B(__this, 1, NULL);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_0 = __this->____reader;
@@ -5394,14 +4990,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonReader_ReadType_m609B4018D61DC1747
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, int32_t ___0_count, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* L_0 = __this->____currentContext;
 		ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* L_1 = L_0;
@@ -5415,14 +5003,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader_MovePosition_mEA8B97A5B0231E2
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* BsonReader_ReadBytes_m1CC1F7104F11C353A30134E0AA3D66B3F52938F7 (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, int32_t ___0_count, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_ReadBytes_m1CC1F7104F11C353A30134E0AA3D66B3F52938F7_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_ReadBytes_m1CC1F7104F11C353A30134E0AA3D66B3F52938F7_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_count;
 		BsonReader_MovePosition_mEA8B97A5B0231E2555EB70B8D7C19D4A8D29AD2B(__this, L_0, NULL);
@@ -5439,13 +5019,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__cctor_m0DD14E39C1F1B4DE1A4C1
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader__cctor_m0DD14E39C1F1B4DE1A4C13B0DEFAE390C729627F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader__cctor_m0DD14E39C1F1B4DE1A4C13B0DEFAE390C729627F_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)2);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
@@ -5501,14 +5078,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonReader__cctor_m0DD14E39C1F1B4DE1A4C1
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContainerContext__ctor_m1C2D964213E25068CF24D94D74E2D9D5BB60061B (ContainerContext_t395A53F67B3E3495D06E64D268212D040308EA5A* __this, int8_t ___0_type, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContainerContext__ctor_m1C2D964213E25068CF24D94D74E2D9D5BB60061B_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, ContainerContext__ctor_m1C2D964213E25068CF24D94D74E2D9D5BB60061B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		int8_t L_0 = ___0_type;
@@ -5526,14 +5095,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContainerContext__ctor_m1C2D964213E25068
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2 (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = __this->___U3CParentU3Ek__BackingField;
 		return L_0;
@@ -5541,14 +5102,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_value;
 		__this->___U3CParentU3Ek__BackingField = L_0;
@@ -5558,14 +5111,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonToken_set_Parent_m6FE9310A7BE7920BFB
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->___U3CCalculatedSizeU3Ek__BackingField;
 		return L_0;
@@ -5573,14 +5118,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonToken_get_CalculatedSize_mBEC94C9
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->___U3CCalculatedSizeU3Ek__BackingField = L_0;
@@ -5589,14 +5126,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonToken_set_CalculatedSize_m50B0EAD822
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonToken__ctor_m04A0C7B9070DF73C0689038C8E2593C5FC18F8AA (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken__ctor_m04A0C7B9070DF73C0689038C8E2593C5FC18F8AA_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken__ctor_m04A0C7B9070DF73C0689038C8E2593C5FC18F8AA_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
@@ -5615,14 +5144,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonObject_Add_mC5FD9CC9FC974FC4D7B10981
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_Add_mC5FD9CC9FC974FC4D7B10981A33291E88DB9DC79_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m05A778DDB06E3015BA3B2B539CB6360D44308F65_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObject_Add_mC5FD9CC9FC974FC4D7B10981A33291E88DB9DC79_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_tDBB5CD4D0EC3C783FE3A623450331580CB409B5E* L_0 = __this->____children;
 		BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* L_1 = (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE*)il2cpp_codegen_object_new(BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE_il2cpp_TypeInfo_var);
@@ -5647,14 +5173,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonObject_Add_mC5FD9CC9FC974FC4D7B10981
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonObject_get_Type_m970C3BD8AC7D9844A62BE0C687DCF270E784D8ED (BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_get_Type_m970C3BD8AC7D9844A62BE0C687DCF270E784D8ED_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObject_get_Type_m970C3BD8AC7D9844A62BE0C687DCF270E784D8ED_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		return (int8_t)(3);
 	}
@@ -5664,13 +5182,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonObject_GetEnumerator_mD0C1
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_GetEnumerator_mD0C11E8BAC09FB62CA08FF674E3F7F23690AE14D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tC9B39CFED6C0A6D5CDD1FE2F790F532A7A4AB203_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m872CB87380297BB9B43B61A80CB28F4A8C1C9011_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObject_GetEnumerator_mD0C11E8BAC09FB62CA08FF674E3F7F23690AE14D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_tDBB5CD4D0EC3C783FE3A623450331580CB409B5E* L_0 = __this->____children;
 		NullCheck(L_0);
@@ -5683,14 +5198,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonObject_GetEnumerator_mD0C1
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonObject_System_Collections_IEnumerable_GetEnumerator_m6C7320F7B08967EF6FF0D1EB4681408550A44D7C (BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_System_Collections_IEnumerable_GetEnumerator_m6C7320F7B08967EF6FF0D1EB4681408550A44D7C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObject_System_Collections_IEnumerable_GetEnumerator_m6C7320F7B08967EF6FF0D1EB4681408550A44D7C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0;
 		L_0 = BsonObject_GetEnumerator_mD0C11E8BAC09FB62CA08FF674E3F7F23690AE14D(__this, NULL);
@@ -5702,13 +5209,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonObject__ctor_m630E32FEFB85ABC73DA890
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject__ctor_m630E32FEFB85ABC73DA890C946486161162E0BDA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m573D86B46CB0180CD99560B5E3B03E4A5CDE368E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tDBB5CD4D0EC3C783FE3A623450331580CB409B5E_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObject__ctor_m630E32FEFB85ABC73DA890C946486161162E0BDA_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_tDBB5CD4D0EC3C783FE3A623450331580CB409B5E* L_0 = (List_1_tDBB5CD4D0EC3C783FE3A623450331580CB409B5E*)il2cpp_codegen_object_new(List_1_tDBB5CD4D0EC3C783FE3A623450331580CB409B5E_il2cpp_TypeInfo_var);
 		List_1__ctor_m573D86B46CB0180CD99560B5E3B03E4A5CDE368E(L_0, List_1__ctor_m573D86B46CB0180CD99560B5E3B03E4A5CDE368E_RuntimeMethod_var);
@@ -5731,12 +5235,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonArray_Add_m483471C0CDB8A4438E1A02748
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_Add_m483471C0CDB8A4438E1A0274845DC6424BDB765D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m7B3928D9D175A2FC23AD66D3F2E0BC9200D98E5D_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonArray_Add_m483471C0CDB8A4438E1A0274845DC6424BDB765D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_t39498331735ADCEED3C66A5E7F951FCC1C4EEEBE* L_0 = __this->____children;
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_1 = ___0_token;
@@ -5750,14 +5251,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonArray_Add_m483471C0CDB8A4438E1A02748
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonArray_get_Type_mCC68071DB9C64C070101B2633053632727FB9382 (BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_get_Type_mCC68071DB9C64C070101B2633053632727FB9382_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonArray_get_Type_mCC68071DB9C64C070101B2633053632727FB9382_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		return (int8_t)(4);
 	}
@@ -5767,13 +5260,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonArray_GetEnumerator_m38E98
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_GetEnumerator_m38E989DD847BFBA1D9AE6408890EBEC664E0729C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_t597C435D76D0912631AF7909B79461C347020E0C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mC2E8A71D702B5F722A83170C68470084EA6F1AEE_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonArray_GetEnumerator_m38E989DD847BFBA1D9AE6408890EBEC664E0729C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_t39498331735ADCEED3C66A5E7F951FCC1C4EEEBE* L_0 = __this->____children;
 		NullCheck(L_0);
@@ -5786,14 +5276,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonArray_GetEnumerator_m38E98
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonArray_System_Collections_IEnumerable_GetEnumerator_m36E9AA3609FC3571D00A9C885C12A578D15432D7 (BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_System_Collections_IEnumerable_GetEnumerator_m36E9AA3609FC3571D00A9C885C12A578D15432D7_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonArray_System_Collections_IEnumerable_GetEnumerator_m36E9AA3609FC3571D00A9C885C12A578D15432D7_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0;
 		L_0 = BsonArray_GetEnumerator_m38E989DD847BFBA1D9AE6408890EBEC664E0729C(__this, NULL);
@@ -5805,13 +5287,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonArray__ctor_m3121DAA5995AA53B27FCE79
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray__ctor_m3121DAA5995AA53B27FCE79E5F69D13131F1F9F1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m3935A6D299A58068CCFB138217E1D9C02F7130E1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t39498331735ADCEED3C66A5E7F951FCC1C4EEEBE_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonArray__ctor_m3121DAA5995AA53B27FCE79E5F69D13131F1F9F1_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		List_1_t39498331735ADCEED3C66A5E7F951FCC1C4EEEBE* L_0 = (List_1_t39498331735ADCEED3C66A5E7F951FCC1C4EEEBE*)il2cpp_codegen_object_new(List_1_t39498331735ADCEED3C66A5E7F951FCC1C4EEEBE_il2cpp_TypeInfo_var);
 		List_1__ctor_m3935A6D299A58068CCFB138217E1D9C02F7130E1(L_0, List_1__ctor_m3935A6D299A58068CCFB138217E1D9C02F7130E1_RuntimeMethod_var);
@@ -5831,14 +5310,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonArray__ctor_m3121DAA5995AA53B27FCE79
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonValue__ctor_m316255047E379B29CD5D70DBCDF98BAD4DB4C695 (BsonValue_t0879D12F1ACD829C6758ECDCE568BC324E1F6660* __this, RuntimeObject* ___0_value, int8_t ___1_type, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonValue__ctor_m316255047E379B29CD5D70DBCDF98BAD4DB4C695_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonValue__ctor_m316255047E379B29CD5D70DBCDF98BAD4DB4C695_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken__ctor_m04A0C7B9070DF73C0689038C8E2593C5FC18F8AA(__this, NULL);
 		RuntimeObject* L_0 = ___0_value;
@@ -5851,14 +5322,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonValue__ctor_m316255047E379B29CD5D70D
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2 (BsonValue_t0879D12F1ACD829C6758ECDCE568BC324E1F6660* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0 = __this->____value;
 		return L_0;
@@ -5866,14 +5329,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonValue_get_Value_m5CEBB13E3
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonValue_get_Type_m02508F5B41591FB05A329FB62FF25DBC56BC200A (BsonValue_t0879D12F1ACD829C6758ECDCE568BC324E1F6660* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonValue_get_Type_m02508F5B41591FB05A329FB62FF25DBC56BC200A_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonValue_get_Type_m02508F5B41591FB05A329FB62FF25DBC56BC200A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int8_t L_0 = __this->____type;
 		return L_0;
@@ -5889,14 +5344,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonValue_get_Type_m02508F5B41591FB05A
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3 (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->___U3CByteCountU3Ek__BackingField;
 		return L_0;
@@ -5904,14 +5351,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonString_get_ByteCount_m513C4F508FF
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->___U3CByteCountU3Ek__BackingField = L_0;
@@ -5920,14 +5359,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonString_set_ByteCount_m31A317821BECC7
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = __this->___U3CIncludeLengthU3Ek__BackingField;
 		return L_0;
@@ -5935,14 +5366,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BsonString_get_IncludeLength_m0E82D14B7D
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3 (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = ___0_value;
 		__this->___U3CIncludeLengthU3Ek__BackingField = L_0;
@@ -5951,14 +5374,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonString_set_IncludeLength_m172F4ADF8C
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonString__ctor_mA28B714E7D11E7131A16CB152D171CA7A4A6BD56 (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, RuntimeObject* ___0_value, bool ___1_includeLength, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString__ctor_mA28B714E7D11E7131A16CB152D171CA7A4A6BD56_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString__ctor_mA28B714E7D11E7131A16CB152D171CA7A4A6BD56_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0 = ___0_value;
 		BsonValue__ctor_m316255047E379B29CD5D70DBCDF98BAD4DB4C695(__this, L_0, 2, NULL);
@@ -5977,14 +5392,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonString__ctor_mA28B714E7D11E7131A16CB
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B (BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint8_t L_0 = __this->___U3CBinaryTypeU3Ek__BackingField;
 		return L_0;
@@ -5992,14 +5399,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t BsonBinary_get_BinaryType_mDE0AC23257
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A (BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8* __this, uint8_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint8_t L_0 = ___0_value;
 		__this->___U3CBinaryTypeU3Ek__BackingField = L_0;
@@ -6008,14 +5407,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinary_set_BinaryType_m967019AC06E6A
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinary__ctor_m5B3120436DF99BD5D9DE02D2695CD9DE2CE7BB5B (BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, uint8_t ___1_binaryType, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary__ctor_m5B3120436DF99BD5D9DE02D2695CD9DE2CE7BB5B_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinary__ctor_m5B3120436DF99BD5D9DE02D2695CD9DE2CE7BB5B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		BsonValue__ctor_m316255047E379B29CD5D70DBCDF98BAD4DB4C695(__this, (RuntimeObject*)L_0, 5, NULL);
@@ -6034,14 +5425,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonBinary__ctor_m5B3120436DF99BD5D9DE02
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = __this->___U3CPatternU3Ek__BackingField;
 		return L_0;
@@ -6049,14 +5432,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = ___0_value;
 		__this->___U3CPatternU3Ek__BackingField = L_0;
@@ -6066,14 +5441,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonRegex_set_Pattern_m03387AC7A329EEAA6
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211 (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = __this->___U3COptionsU3Ek__BackingField;
 		return L_0;
@@ -6081,14 +5448,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = ___0_value;
 		__this->___U3COptionsU3Ek__BackingField = L_0;
@@ -6101,12 +5460,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonRegex__ctor_mA823184E2E1262D62F38DC5
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex__ctor_mA823184E2E1262D62F38DC5D1ACC130B5B0EEE99_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex__ctor_mA823184E2E1262D62F38DC5D1ACC130B5B0EEE99_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken__ctor_m04A0C7B9070DF73C0689038C8E2593C5FC18F8AA(__this, NULL);
 		String_t* L_0 = ___0_pattern;
@@ -6122,14 +5478,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonRegex__ctor_mA823184E2E1262D62F38DC5
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonRegex_get_Type_mE72E10F4DBAAC4714F12F2DC916E927A1EE72C3A (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_get_Type_mE72E10F4DBAAC4714F12F2DC916E927A1EE72C3A_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_get_Type_mE72E10F4DBAAC4714F12F2DC916E927A1EE72C3A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		return (int8_t)(((int32_t)11));
 	}
@@ -6144,14 +5492,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t BsonRegex_get_Type_mE72E10F4DBAAC4714F
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9 (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = __this->___U3CNameU3Ek__BackingField;
 		return L_0;
@@ -6159,14 +5499,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0 (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = ___0_value;
 		__this->___U3CNameU3Ek__BackingField = L_0;
@@ -6176,14 +5508,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonProperty_set_Name_mBF75E093501D61ABA
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2 (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = __this->___U3CValueU3Ek__BackingField;
 		return L_0;
@@ -6191,14 +5515,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8 (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_value;
 		__this->___U3CValueU3Ek__BackingField = L_0;
@@ -6208,14 +5524,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonProperty_set_Value_m7DAC5256E7337131
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonProperty__ctor_mFC963BA0F736C7A11FE68BB3A4DDE63A99B3A54C (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty__ctor_mFC963BA0F736C7A11FE68BB3A4DDE63A99B3A54C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty__ctor_mFC963BA0F736C7A11FE68BB3A4DDE63A99B3A54C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
@@ -6239,14 +5547,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonProperty__ctor_mFC963BA0F736C7A11FE6
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonWriter_get_DateTimeKindHandling_m97179D0C081FB37FC144909FEE6FC4B2146B8E8F (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_get_DateTimeKindHandling_m97179D0C081FB37FC144909FEE6FC4B2146B8E8F_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_get_DateTimeKindHandling_m97179D0C081FB37FC144909FEE6FC4B2146B8E8F_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* L_0 = __this->____writer;
 		NullCheck(L_0);
@@ -6257,14 +5557,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BsonWriter_get_DateTimeKindHandling_m
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_set_DateTimeKindHandling_m248E2BDCA2BBAAC774B31003C5F399D2B5D9DAE7 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_set_DateTimeKindHandling_m248E2BDCA2BBAAC774B31003C5F399D2B5D9DAE7_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_set_DateTimeKindHandling_m248E2BDCA2BBAAC774B31003C5F399D2B5D9DAE7_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* L_0 = __this->____writer;
 		int32_t L_1 = ___0_value;
@@ -6280,13 +5572,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter__ctor_mB8DA2F2E87909A79490FBD
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter__ctor_mB8DA2F2E87909A79490FBDF3FCD82D9C14D56B24_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF7E6C53D86D8ADC0DB8EFC0A2CD9877CC8BC9914);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter__ctor_mB8DA2F2E87909A79490FBDF3FCD82D9C14D56B24_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		il2cpp_codegen_runtime_class_init_inline(JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3_il2cpp_TypeInfo_var);
 		JsonWriter__ctor_m5B0E4DCEC60E5158D71DDF7768E0FC5B09573739(__this, NULL);
@@ -6308,13 +5597,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter__ctor_m9A68F285FFC9770E242BDD
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter__ctor_m9A68F285FFC9770E242BDDDEBF8E6F7D4FC22F0E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral638C5441E8427B2B9D2C941DDBF958579B5FE3F0);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter__ctor_m9A68F285FFC9770E242BDDDEBF8E6F7D4FC22F0E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		il2cpp_codegen_runtime_class_init_inline(JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3_il2cpp_TypeInfo_var);
 		JsonWriter__ctor_m5B0E4DCEC60E5158D71DDF7768E0FC5B09573739(__this, NULL);
@@ -6330,14 +5616,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter__ctor_m9A68F285FFC9770E242BDD
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_Flush_m9E2FCED7F3C90BB693529D62635D1DAF11685F08 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_Flush_m9E2FCED7F3C90BB693529D62635D1DAF11685F08_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_Flush_m9E2FCED7F3C90BB693529D62635D1DAF11685F08_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* L_0 = __this->____writer;
 		NullCheck(L_0);
@@ -6347,14 +5625,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_Flush_m9E2FCED7F3C90BB693529D
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteEnd_mF35070E1C6EC127F41F69707FB949FE90324F439 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, int32_t ___0_token, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteEnd_mF35070E1C6EC127F41F69707FB949FE90324F439_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteEnd_mF35070E1C6EC127F41F69707FB949FE90324F439_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_token;
 		JsonWriter_WriteEnd_m36FB4C43EE0F01066B13019046E5EECF96C902B8(__this, L_0, NULL);
@@ -6380,14 +5650,6 @@ IL_0026:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteComment_m43D84D85207162EF1083D96254809FD5422D46C3 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, String_t* ___0_text, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteComment_m43D84D85207162EF1083D96254809FD5422D46C3_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteComment_m43D84D85207162EF1083D96254809FD5422D46C3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriterException_tF13EC07A2159B2C5951971D4AED5A195DEBE8AAA* L_0;
 		L_0 = JsonWriterException_Create_mA440D59D85200435C7AFC40CDEF5773888D0F94B(__this, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8F72A13E7E8E1CB50038C54FE7CC02AB7582F7AA)), (Exception_t*)NULL, NULL);
@@ -6396,14 +5658,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteComment_m43D84D85207162E
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteStartConstructor_m1F88ADAEF8A51724CCBEDBF45591F27C337A9B15 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteStartConstructor_m1F88ADAEF8A51724CCBEDBF45591F27C337A9B15_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteStartConstructor_m1F88ADAEF8A51724CCBEDBF45591F27C337A9B15_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriterException_tF13EC07A2159B2C5951971D4AED5A195DEBE8AAA* L_0;
 		L_0 = JsonWriterException_Create_mA440D59D85200435C7AFC40CDEF5773888D0F94B(__this, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral040ACBC1C698075688E5B27E50C6370BEB2676A0)), (Exception_t*)NULL, NULL);
@@ -6412,14 +5666,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteStartConstructor_m1F88AD
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteRaw_m166F2B79C505DA68A9A52275A9DF26B397A4460D (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteRaw_m166F2B79C505DA68A9A52275A9DF26B397A4460D_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteRaw_m166F2B79C505DA68A9A52275A9DF26B397A4460D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriterException_tF13EC07A2159B2C5951971D4AED5A195DEBE8AAA* L_0;
 		L_0 = JsonWriterException_Create_mA440D59D85200435C7AFC40CDEF5773888D0F94B(__this, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0C97C66F7D6312F0BCB5A4E3E9ED7F8F1CF50F6A)), (Exception_t*)NULL, NULL);
@@ -6428,14 +5674,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteRaw_m166F2B79C505DA68A9A
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteRawValue_m12591A651F07D961A685E3C463098ED87557CB02 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteRawValue_m12591A651F07D961A685E3C463098ED87557CB02_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteRawValue_m12591A651F07D961A685E3C463098ED87557CB02_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriterException_tF13EC07A2159B2C5951971D4AED5A195DEBE8AAA* L_0;
 		L_0 = JsonWriterException_Create_mA440D59D85200435C7AFC40CDEF5773888D0F94B(__this, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0C97C66F7D6312F0BCB5A4E3E9ED7F8F1CF50F6A)), (Exception_t*)NULL, NULL);
@@ -6448,11 +5686,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteStartArray_m843BECB153A0
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteStartArray_m843BECB153A090E2412988023B9B2D7412D95DA2_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteStartArray_m843BECB153A090E2412988023B9B2D7412D95DA2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriter_WriteStartArray_mE2EDFEE60214B989C151DCD66C2B3219D927C75A(__this, NULL);
 		BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1* L_0 = (BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1*)il2cpp_codegen_object_new(BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1_il2cpp_TypeInfo_var);
@@ -6467,11 +5702,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteStartObject_mE29202DE49A
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteStartObject_mE29202DE49A43E8A76A3E230307B42D042076313_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteStartObject_mE29202DE49A43E8A76A3E230307B42D042076313_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriter_WriteStartObject_m327A0474DB3032162614C57B6154773EA900C153(__this, NULL);
 		BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB* L_0 = (BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB*)il2cpp_codegen_object_new(BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB_il2cpp_TypeInfo_var);
@@ -6482,14 +5714,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteStartObject_mE29202DE49A
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WritePropertyName_mFE66ED7A0D014936611D49C5F53A490D717D721E (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WritePropertyName_mFE66ED7A0D014936611D49C5F53A490D717D721E_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WritePropertyName_mFE66ED7A0D014936611D49C5F53A490D717D721E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		String_t* L_0 = ___0_name;
 		JsonWriter_WritePropertyName_mD805FBFFF2D43C2EC1E23A59C0102E5244CD537F(__this, L_0, NULL);
@@ -6501,14 +5725,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WritePropertyName_mFE66ED7A0D
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_Close_m8D322FE76531EA2599FD4F4C31540532D0A13A42 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_Close_m8D322FE76531EA2599FD4F4C31540532D0A13A42_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_Close_m8D322FE76531EA2599FD4F4C31540532D0A13A42_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriter_Close_m550789FF5D483AA86A99B5301B375F5BFB08C523(__this, NULL);
 		bool L_0;
@@ -6538,14 +5754,6 @@ IL_0021:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_AddParent_m5733DE6024C0F5F3DF8B2638EB25D9DF15AB2761 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* ___0_container, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_AddParent_m5733DE6024C0F5F3DF8B2638EB25D9DF15AB2761_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_AddParent_m5733DE6024C0F5F3DF8B2638EB25D9DF15AB2761_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_container;
 		BsonWriter_AddToken_m3B3692A74D77D31F63999E7E77DD4386B74A9901(__this, L_0, NULL);
@@ -6557,14 +5765,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_AddParent_m5733DE6024C0F5F3DF
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_RemoveParent_m76AEE3E680B0AA556D984C4D7AE1848C198AF103 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_RemoveParent_m76AEE3E680B0AA556D984C4D7AE1848C198AF103_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_RemoveParent_m76AEE3E680B0AA556D984C4D7AE1848C198AF103_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = __this->____parent;
 		NullCheck(L_0);
@@ -6581,11 +5781,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_AddValue_m1EEA7A7873B2D58AAC3
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonValue_t0879D12F1ACD829C6758ECDCE568BC324E1F6660_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_AddValue_m1EEA7A7873B2D58AAC37EB24AB9CFB3F81DB29A5_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_AddValue_m1EEA7A7873B2D58AAC37EB24AB9CFB3F81DB29A5_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0 = ___0_value;
 		int8_t L_1 = ___1_type;
@@ -6602,11 +5799,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_AddToken_m3B3692A74D77D31F639
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonArray_tFD661949ABAD006A5C5719C118657CEF89A94FA1_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObject_tB6CCFA86DA440F3A31401EB265FBB77585857BAB_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_AddToken_m3B3692A74D77D31F63999E7E77DD4386B74A9901_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_AddToken_m3B3692A74D77D31F63999E7E77DD4386B74A9901_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = __this->____parent;
 		if (!L_0)
@@ -6692,14 +5886,6 @@ IL_007a:
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m1C861DC3F9139376E4A6C2677D367DC71F54CE19 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m1C861DC3F9139376E4A6C2677D367DC71F54CE19_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m1C861DC3F9139376E4A6C2677D367DC71F54CE19_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0 = ___0_value;
 		JsonWriter_WriteValue_mC96DBA6DC02ACB9D67D4524889764368DB468C2E(__this, L_0, NULL);
@@ -6708,14 +5894,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m1C861DC3F9139376E
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteNull_mFFF707F753F8ABDDB465D0B4E961D64DC7887586 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteNull_mFFF707F753F8ABDDB465D0B4E961D64DC7887586_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteNull_mFFF707F753F8ABDDB465D0B4E961D64DC7887586_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriter_WriteNull_m2BF712564701AA53BAC6BD922677FF7B0B2310BC(__this, NULL);
 		BsonWriter_AddValue_m1EEA7A7873B2D58AAC37EB24AB9CFB3F81DB29A5(__this, NULL, ((int32_t)10), NULL);
@@ -6724,14 +5902,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteNull_mFFF707F753F8ABDDB4
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteUndefined_m08D4E492179735F9F3857ACCB7153F71A9F45A72 (BsonWriter_tA81B979F9E0F8BE8AE56AFD64679C73B2BE10456* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteUndefined_m08D4E492179735F9F3857ACCB7153F71A9F45A72_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteUndefined_m08D4E492179735F9F3857ACCB7153F71A9F45A72_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		JsonWriter_WriteUndefined_m507BF49F988B94F07230A9B502D7E430E1ACCF00(__this, NULL);
 		BsonWriter_AddValue_m1EEA7A7873B2D58AAC37EB24AB9CFB3F81DB29A5(__this, NULL, 6, NULL);
@@ -6744,11 +5914,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mF23F9970B41FBBAF8
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mF23F9970B41FBBAF8D989EDEADF6D850737A94F3_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mF23F9970B41FBBAF8D989EDEADF6D850737A94F3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		String_t* L_0 = ___0_value;
 		JsonWriter_WriteValue_m3ECF13257A8D1AB90301A4174D42337149BC9D0C(__this, L_0, NULL);
@@ -6777,12 +5944,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m2FC79561497CBDF98
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m2FC79561497CBDF988D2EF722E22903E63ECDC57_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m2FC79561497CBDF988D2EF722E22903E63ECDC57_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		JsonWriter_WriteValue_m8E9BDBD7C29F82DCCB87B4F5D17304F5A341A5B8(__this, L_0, NULL);
@@ -6798,12 +5962,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m244AEDCA1E419CEFA
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m244AEDCA1E419CEFAC8A082D4B9A0C4689FF2CCE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m244AEDCA1E419CEFAC8A082D4B9A0C4689FF2CCE_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint32_t L_0 = ___0_value;
 		if ((!(((uint32_t)L_0) > ((uint32_t)((int32_t)2147483647LL)))))
@@ -6833,12 +5994,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m3CCC473FC5D5CDB2F
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m3CCC473FC5D5CDB2FA5A096112C3680B7AAD13D8_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m3CCC473FC5D5CDB2FA5A096112C3680B7AAD13D8_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int64_t L_0 = ___0_value;
 		JsonWriter_WriteValue_mEAB0A21EA57BEDF7BAD742C3F2A75EEB2E1091FE(__this, L_0, NULL);
@@ -6854,12 +6012,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m253E004DDC355C900
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m253E004DDC355C900E5146C875EFEBFE0B808CFD_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m253E004DDC355C900E5146C875EFEBFE0B808CFD_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint64_t L_0 = ___0_value;
 		if ((!(((uint64_t)L_0) > ((uint64_t)((int64_t)(std::numeric_limits<int64_t>::max)())))))
@@ -6889,12 +6044,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mE26EACDC1C523AA20
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mE26EACDC1C523AA208225AB9FACF48D6EE9A939B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mE26EACDC1C523AA208225AB9FACF48D6EE9A939B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		float L_0 = ___0_value;
 		JsonWriter_WriteValue_mB83A734CC93E3FA5CF86ACD51DC69F42DF7FEA54(__this, L_0, NULL);
@@ -6910,12 +6062,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mA83F23BC4B8D4AC8C
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mA83F23BC4B8D4AC8C71C95F7BD91275B61ACCEFC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mA83F23BC4B8D4AC8C71C95F7BD91275B61ACCEFC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		double L_0 = ___0_value;
 		JsonWriter_WriteValue_m2C9947B42490CA9AB5E8EEFB36B3E00359C472D9(__this, L_0, NULL);
@@ -6932,11 +6081,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mD623680FD8D563F27
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mD623680FD8D563F2713B13D88D9DC4BBF1A5B939_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mD623680FD8D563F2713B13D88D9DC4BBF1A5B939_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = ___0_value;
 		JsonWriter_WriteValue_m9EF9755CB7576F61E081148C00169A7128903B8B(__this, L_0, NULL);
@@ -6952,12 +6098,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m6DB75597C66D7A253
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m6DB75597C66D7A25306CDE9F94D404F71B13B595_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m6DB75597C66D7A25306CDE9F94D404F71B13B595_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int16_t L_0 = ___0_value;
 		JsonWriter_WriteValue_mE7084E3565A5BAE07F9E553F7C9362C2022E5B44(__this, L_0, NULL);
@@ -6973,12 +6116,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m03EFC7DAE130F7060
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m03EFC7DAE130F7060ABE5AF7EB2FCF2E1E19ED62_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m03EFC7DAE130F7060ABE5AF7EB2FCF2E1E19ED62_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint16_t L_0 = ___0_value;
 		JsonWriter_WriteValue_m152C46080EAA9C377E3E2E2942B16273F93A2148(__this, L_0, NULL);
@@ -6995,14 +6135,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m5896FAE2E7C7B6F78
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m5896FAE2E7C7B6F78920F6B3D024952066069434_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m5896FAE2E7C7B6F78920F6B3D024952066069434_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Il2CppChar L_0 = ___0_value;
 		JsonWriter_WriteValue_mD5E4500BFFBC814E26C57409026A403C71EEECCF(__this, L_0, NULL);
@@ -7026,12 +6163,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m8CAB1650E127C21B6
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m8CAB1650E127C21B630B95315A4B16D28F096F4E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m8CAB1650E127C21B630B95315A4B16D28F096F4E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint8_t L_0 = ___0_value;
 		JsonWriter_WriteValue_m1AEB560BFD2393EBBE9E766263CA01E3BA2D0E6F(__this, L_0, NULL);
@@ -7047,12 +6181,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mE2C9B27E787A7A8BD
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mE2C9B27E787A7A8BDB1595D45E225AAC49E50BF7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mE2C9B27E787A7A8BDB1595D45E225AAC49E50BF7_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int8_t L_0 = ___0_value;
 		JsonWriter_WriteValue_m0E635E0E6B005CD8D434FE57FAC79655FD774C4C(__this, L_0, NULL);
@@ -7068,12 +6199,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m7CED6666FFC962781
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m7CED6666FFC962781DA90B7EF454DDDDF199E5F1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m7CED6666FFC962781DA90B7EF454DDDDF199E5F1_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___0_value;
 		JsonWriter_WriteValue_mBCA33B3507B7A3BBDA956DC573ACEEB6A9D359D8(__this, L_0, NULL);
@@ -7089,13 +6217,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mAF1D91264588FB657
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mAF1D91264588FB657ADF93788EE460C24B6F76C3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeUtils_t08EF5030CF29329A3646A81F48D1F440A6234121_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mAF1D91264588FB657ADF93788EE460C24B6F76C3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0 = ___0_value;
 		JsonWriter_WriteValue_m0FF59870C2C94523F795BF6F7F2FFC30CE179F8A(__this, L_0, NULL);
@@ -7118,12 +6243,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m61CDDC4C0D0229BB4
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m61CDDC4C0D0229BB4C6C7423B4A9425E4F7DEC2E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m61CDDC4C0D0229BB4C6C7423B4A9425E4F7DEC2E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_0 = ___0_value;
 		JsonWriter_WriteValue_mF792BC34323AF19A7161B55838A630A9E169A132(__this, L_0, NULL);
@@ -7140,11 +6262,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_m80C95A43E5F729592
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_m80C95A43E5F729592340D263DB7517C40235C14A_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_m80C95A43E5F729592340D263DB7517C40235C14A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		JsonWriter_WriteValue_mE1F445EACF5FB3E7EDF70D0C89BB230D95084DAD(__this, L_0, NULL);
@@ -7161,11 +6280,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mD25E3A6ADCA02C5BE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mD25E3A6ADCA02C5BEC592E5171BE3963965BD71E_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mD25E3A6ADCA02C5BEC592E5171BE3963965BD71E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Guid_t L_0 = ___0_value;
 		JsonWriter_WriteValue_mE9DA95DC1D6DAC672C97C861B92D3CB63933EC7B(__this, L_0, NULL);
@@ -7183,12 +6299,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mA18524C3F7989C780
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mA18524C3F7989C780934E01266E635D06837AE51_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mA18524C3F7989C780934E01266E635D06837AE51_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_0 = ___0_value;
 		JsonWriter_WriteValue_mBE7C0F46DDAD5B5F4D814A322D271B8141BF0F07(__this, L_0, NULL);
@@ -7207,11 +6320,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteValue_mFD86C81134810D4CD
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteValue_mFD86C81134810D4CD85941746F697C0A3CAD8A5C_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteValue_mFD86C81134810D4CD85941746F697C0A3CAD8A5C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = ___0_value;
 		JsonWriter_WriteValue_mBEB204C502C7E1547FC955BDBF558C0D616CD65A(__this, L_0, NULL);
@@ -7230,12 +6340,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteObjectId_mF118E0F427F73A
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteObjectId_mF118E0F427F73A1FEAFB3853F056E9BE87524452_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteObjectId_mF118E0F427F73A1FEAFB3853F056E9BE87524452_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		ValidationUtils_ArgumentNotNull_mC7EBE963D14FFCC7B90B08B403FF584EC520C888((RuntimeObject*)L_0, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, NULL);
@@ -7267,12 +6374,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteRegex_m5A72DD206C8BA845F
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonWriter_WriteRegex_m5A72DD206C8BA845F9F2B6AAC9BF61AC6480B71E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD8CD2F2DA1948373D6BFA8C44122166BC25E3FC0);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonWriter_WriteRegex_m5A72DD206C8BA845F9F2B6AAC9BF61AC6480B71E_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		String_t* L_0 = ___0_pattern;
 		ValidationUtils_ArgumentNotNull_mC7EBE963D14FFCC7B90B08B403FF584EC520C888(L_0, _stringLiteralD8CD2F2DA1948373D6BFA8C44122166BC25E3FC0, NULL);
@@ -7296,14 +6400,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonWriter_WriteRegex_m5A72DD206C8BA845F
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* BsonObjectId_get_Value_mEBD0BBDDA460C3B1ECFFBD7B64C709172C7F14CD (BsonObjectId_tD1799B243CF7FF4983762AFD5AA7EED8287AF4C2* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObjectId_get_Value_mEBD0BBDDA460C3B1ECFFBD7B64C709172C7F14CD_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObjectId_get_Value_mEBD0BBDDA460C3B1ECFFBD7B64C709172C7F14CD_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CValueU3Ek__BackingField;
 		return L_0;
@@ -7311,14 +6407,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A (BsonObjectId_tD1799B243CF7FF4983762AFD5AA7EED8287AF4C2* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		__this->___U3CValueU3Ek__BackingField = L_0;
@@ -7331,12 +6419,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonObjectId__ctor_m755CAEE2BE89A3B5A751
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObjectId__ctor_m755CAEE2BE89A3B5A751FE980FB1A333B3D603C8_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8);
 		s_Il2CppMethodInitialized = true;
 	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObjectId__ctor_m755CAEE2BE89A3B5A751FE980FB1A333B3D603C8_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
@@ -7414,14 +6499,6 @@ IL_0028:
 #endif
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_inline (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_set_DateTimeKindHandling_mE5606CA1E2ADA134652CEC5A0306E5F728E80FC5_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->___U3CDateTimeKindHandlingU3Ek__BackingField = L_0;
@@ -7430,14 +6507,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonBinaryWriter_set_DateTim
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C_inline (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_get_CalculatedSize_mBEC94C9A9175992741A3554721F83D78CBC3CC0C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->___U3CCalculatedSizeU3Ek__BackingField;
 		return L_0;
@@ -7445,14 +6514,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonToken_get_CalculatedS
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2_inline (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_get_Value_m0DAFFE451F84BACD72C5FF9F592D351117DB85F2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = __this->___U3CValueU3Ek__BackingField;
 		return L_0;
@@ -7460,14 +6521,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9_inline (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_get_Name_mF70295B575263AB7307995C119732FBA89FB6FA9_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = __this->___U3CNameU3Ek__BackingField;
 		return L_0;
@@ -7475,14 +6528,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2_inline (BsonValue_t0879D12F1ACD829C6758ECDCE568BC324E1F6660* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonValue_get_Value_m5CEBB13E31BA015930CF1D8E23C464599CE249D2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		RuntimeObject* L_0 = __this->____value;
 		return L_0;
@@ -7490,14 +6535,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BsonValue_get_Valu
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3_inline (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_get_ByteCount_m513C4F508FF36F57B49B881321517CAC2CBE06E3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->___U3CByteCountU3Ek__BackingField;
 		return L_0;
@@ -7505,14 +6542,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonString_get_ByteCount_
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F_inline (BsonBinaryWriter_t57CAA6774547FC60B5DA88E25B2BE27763FB5B09* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinaryWriter_get_DateTimeKindHandling_m90614E0F1C0F02A38281C923194D7339F536664F_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->___U3CDateTimeKindHandlingU3Ek__BackingField;
 		return L_0;
@@ -7520,14 +6549,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonBinaryWriter_get_Date
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B_inline (BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinary_get_BinaryType_mDE0AC23257F594CDF9EECBBD6C9BF59D998DD91B_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint8_t L_0 = __this->___U3CBinaryTypeU3Ek__BackingField;
 		return L_0;
@@ -7535,14 +6556,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t BsonBinary_get_BinaryType
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC_inline (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_get_Pattern_mA699B72A76008CE662D1715632112D68F8BB85CC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = __this->___U3CPatternU3Ek__BackingField;
 		return L_0;
@@ -7550,14 +6563,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211_inline (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_get_Options_mDCE4C399FD3DB3BE40F013A3458CCCD0FCB44211_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = __this->___U3COptionsU3Ek__BackingField;
 		return L_0;
@@ -7565,14 +6570,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonString_t3103767E4B0588B20DC77
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____stringLength;
 		return L_0;
@@ -7580,14 +6577,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB_inline (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_set_CalculatedSize_m50B0EAD822D053F2B1B5DCC6AC1413DF69B8FCAB_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->___U3CCalculatedSizeU3Ek__BackingField = L_0;
@@ -7596,14 +6585,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonToken_set_CalculatedSize
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF_inline (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_set_ByteCount_m31A317821BECC7731FA48F92B5433200A6515BCF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = ___0_value;
 		__this->___U3CByteCountU3Ek__BackingField = L_0;
@@ -7612,14 +6593,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonString_set_ByteCount_m31
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D_inline (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_get_IncludeLength_m0E82D14B7DF5B53FBCD95D5891C3F79E96462D2D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = __this->___U3CIncludeLengthU3Ek__BackingField;
 		return L_0;
@@ -7627,14 +6600,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool BsonString_get_IncludeLength
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool JsonReader_get_CloseInput_m5D28FC12BD22B62AA1E493BC7A77402F1AA26DE4_inline (JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonReader_get_CloseInput_m5D28FC12BD22B62AA1E493BC7A77402F1AA26DE4_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, JsonReader_get_CloseInput_m5D28FC12BD22B62AA1E493BC7A77402F1AA26DE4_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = __this->___U3CCloseInputU3Ek__BackingField;
 		return L_0;
@@ -7642,14 +6607,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool JsonReader_get_CloseInput_m5
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JsonReader_get_CurrentState_m2B6FA669883053CDABF108A980F808CDC9F13699_inline (JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonReader_get_CurrentState_m2B6FA669883053CDABF108A980F808CDC9F13699_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, JsonReader_get_CurrentState_m2B6FA669883053CDABF108A980F808CDC9F13699_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____currentState;
 		return L_0;
@@ -7657,14 +6614,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JsonReader_get_CurrentSta
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D_inline (BsonReader_tA08F426AB3C16A39BAD2B91AC7D0267B54038423* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonReader_get_DateTimeKindHandling_m7A6ED156AAC7CD3D4343B0779E4ABD90E247333D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____dateTimeKindHandling;
 		return L_0;
@@ -7672,14 +6621,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BsonReader_get_DateTimeKi
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0_inline (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_set_Name_mBF75E093501D61ABA9B44CD595A848386002EDA0_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = ___0_value;
 		__this->___U3CNameU3Ek__BackingField = L_0;
@@ -7689,14 +6630,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonProperty_set_Name_mBF75E
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8_inline (BsonProperty_t8A7853AC505306C95E55EA6FB58334DD812288FE* __this, BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonProperty_set_Value_m7DAC5256E7337131CB0004255D86FBB812E5BAD8_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_value;
 		__this->___U3CValueU3Ek__BackingField = L_0;
@@ -7706,14 +6639,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonProperty_set_Value_m7DAC
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC_inline (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_set_Parent_m6FE9310A7BE7920BFBBB78D007D3326FE25861BC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = ___0_value;
 		__this->___U3CParentU3Ek__BackingField = L_0;
@@ -7723,14 +6648,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonToken_set_Parent_m6FE931
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3_inline (BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonString_set_IncludeLength_m172F4ADF8CE9080328D6562647339230247B9AB3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = ___0_value;
 		__this->___U3CIncludeLengthU3Ek__BackingField = L_0;
@@ -7739,14 +6656,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonString_set_IncludeLength
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A_inline (BsonBinary_t10CD8515CA416C5958E3FA3290910E8FD2DFB8A8* __this, uint8_t ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonBinary_set_BinaryType_m967019AC06E6A447F796DCA7A73CABEFF3C7402A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		uint8_t L_0 = ___0_value;
 		__this->___U3CBinaryTypeU3Ek__BackingField = L_0;
@@ -7755,14 +6664,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonBinary_set_BinaryType_m9
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF_inline (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_set_Pattern_m03387AC7A329EEAA6442715EA019B93C7D4A14FF_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = ___0_value;
 		__this->___U3CPatternU3Ek__BackingField = L_0;
@@ -7772,14 +6673,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonRegex_set_Pattern_m03387
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC_inline (BsonRegex_t34DECD5385DB6EE81029A06DFE3ECB3747D3C6E1* __this, BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonRegex_set_Options_m8A305E5CD6B32F3A48F6BC31203892A26FE967FC_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonString_t3103767E4B0588B20DC77102471D6F18C44960AE* L_0 = ___0_value;
 		__this->___U3COptionsU3Ek__BackingField = L_0;
@@ -7789,14 +6682,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonRegex_set_Options_m8A305
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool JsonWriter_get_CloseOutput_m0A40D11FF244B8766FA5A2467C78024B6E2F4736_inline (JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonWriter_get_CloseOutput_m0A40D11FF244B8766FA5A2467C78024B6E2F4736_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, JsonWriter_get_CloseOutput_m0A40D11FF244B8766FA5A2467C78024B6E2F4736_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = __this->___U3CCloseOutputU3Ek__BackingField;
 		return L_0;
@@ -7804,14 +6689,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool JsonWriter_get_CloseOutput_m
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2_inline (BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonToken_get_Parent_m05A247A8B1E2FB87849EB7B6FE0B49A606BEF1A2_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		BsonToken_tC50FF73A9547BCD6059B57F1E99768BB22BEE3D4* L_0 = __this->___U3CParentU3Ek__BackingField;
 		return L_0;
@@ -7819,14 +6696,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BsonToken_tC50FF73A9547BCD6059B57
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JsonWriter_get_DateTimeZoneHandling_m70A3776234605D953796332656844492C164F799_inline (JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonWriter_get_DateTimeZoneHandling_m70A3776234605D953796332656844492C164F799_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, JsonWriter_get_DateTimeZoneHandling_m70A3776234605D953796332656844492C164F799_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____dateTimeZoneHandling;
 		return L_0;
@@ -7834,14 +6703,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JsonWriter_get_DateTimeZo
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A_inline (BsonObjectId_tD1799B243CF7FF4983762AFD5AA7EED8287AF4C2* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, BsonObjectId_set_Value_mCCFD2400AA3F5C8AD279B6270932CE681CB7073A_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		__this->___U3CValueU3Ek__BackingField = L_0;
@@ -7851,8 +6712,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BsonObjectId_set_Value_mCCFD
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m14F273FB376DF00D727434CDCD28AB4EDCC14C3C_gshared_inline (Nullable_1_t71C4EA4E848DBD7A4A97704069FB951159A3A339* __this, const RuntimeMethod* method) 
 {
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, method, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		bool L_0 = *(bool*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
 		return L_0;
@@ -7862,8 +6721,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Nullable_1_GetValueOrDefault
 {
 	const uint32_t SizeOf_T_tF1352992D99D495C6F2BE3DC43F8A00BAD6B2EAA = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 0));
 	const Il2CppFullySharedGenericStruct L_0 = alloca(SizeOf_T_tF1352992D99D495C6F2BE3DC43F8A00BAD6B2EAA);
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, method, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		il2cpp_codegen_memcpy(L_0, il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1)), SizeOf_T_tF1352992D99D495C6F2BE3DC43F8A00BAD6B2EAA);
 		il2cpp_codegen_memcpy(il2cppRetVal, L_0, SizeOf_T_tF1352992D99D495C6F2BE3DC43F8A00BAD6B2EAA);
@@ -7872,8 +6729,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Nullable_1_GetValueOrDefault
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) 
 {
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, method, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____size;
 		return L_0;
@@ -7887,8 +6742,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mD4F3498FBD3BDD3F
 	const Il2CppFullySharedGenericAny L_10 = alloca(SizeOf_T_t664E2061A913AF1FEE499655BC64F0FDE10D2A5E);
 	__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* V_0 = NULL;
 	int32_t V_1 = 0;
-	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, method, NULL, NULL, NULL);
-	CHECK_PAUSE_POINT;
 	{
 		int32_t L_0 = __this->____version;
 		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));

@@ -30,24 +30,20 @@ extern void SceneLoader_QuitNative_mFE5B0B163F9D560A10ADB3574AFE755BAF6BFA43 (vo
 extern void SceneLoader__ctor_m2248766DF38AF07562AD31501C7275B8DF1B7D29 (void);
 extern void TimecapsuleAR_Update_m8BDD3008641DA8933FE08312419302FD51A7EBD0 (void);
 extern void TimecapsuleAR_SpawnCapsule_m4F67FF61CD00F4BC4E8EA81402E7A6A88CCFEEF2 (void);
+extern void TimecapsuleAR_BuryCapsule_m35DE21A325F337215CE39828DE5952EACDF4CAD9 (void);
 extern void TimecapsuleAR_BuryAnimation_mB8449FED9CCFCA7417D798AAEC2F7B614F73BC39 (void);
-extern void TimecapsuleAR_OnFlutterTouch_m08930626927B5BEEAADC4D978689A50942CE8172 (void);
-extern void TimecapsuleAR_OnFlutterTouchEnd_m5D0664C0C4CD88B9CA15B3745F23624D90528369 (void);
-extern void TimecapsuleAR_ResetAR_m2E5D88F370844518D0C911A4A1F69E6D312C361A (void);
 extern void TimecapsuleAR_SendMessageToFlutter_mFE258995ACF51CB6C77F85E458FF7B12D9744BC1 (void);
 extern void TimecapsuleAR__ctor_mCBA6FFB380F6577AD6454469D831CCE2B7DADA43 (void);
 extern void TimecapsuleAR__cctor_mF301A10D93D3A7F002F08DDB54A327C731B2D668 (void);
-extern void U3CBuryAnimationU3Ed__14__ctor_m10CD7E152BDD786E178ED99BE882AAB5F61FC1E5 (void);
-extern void U3CBuryAnimationU3Ed__14_System_IDisposable_Dispose_m3562C36BB3B3D858395D796C5950D395BA56CA40 (void);
-extern void U3CBuryAnimationU3Ed__14_MoveNext_m458932A02492D27E51BD3B8E48EC6791874D2B12 (void);
-extern void U3CBuryAnimationU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7E61D31D67CD30D3C9CF10E4B8D70C7B5F96BE57 (void);
-extern void U3CBuryAnimationU3Ed__14_System_Collections_IEnumerator_Reset_mA91AB83930831B4E86449D35182F00D45D959C0D (void);
-extern void U3CBuryAnimationU3Ed__14_System_Collections_IEnumerator_get_Current_m24808234C6BF80B38A713435E52D58CB3CAFCB30 (void);
+extern void U3CBuryAnimationU3Ed__10__ctor_mECF39AFADFAF6580578C6B7B25BA24ECF8E5D71C (void);
+extern void U3CBuryAnimationU3Ed__10_System_IDisposable_Dispose_m17BACDDCC4A742CC1D00533E13753E173B61D673 (void);
+extern void U3CBuryAnimationU3Ed__10_MoveNext_mD564D1A8B7A8460B00BADC7851179108B32687FB (void);
+extern void U3CBuryAnimationU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7C544C65724799E3F76B53A548210CFD8BB77687 (void);
+extern void U3CBuryAnimationU3Ed__10_System_Collections_IEnumerator_Reset_mDC6065497DE0DAE374D107274E79FFB7F0BCC9EB (void);
+extern void U3CBuryAnimationU3Ed__10_System_Collections_IEnumerator_get_Current_mD79F2C11F931211408152E9927E3E4C284719706 (void);
 extern void TimecapsuleManager_Start_m665DB471DAC93AA06233B4BD93F6F1786612D37F (void);
 extern void TimecapsuleManager_SpawnCapsule_m294A0BAF1FE2C13FB48E9379968279095CE43B49 (void);
-extern void TimecapsuleManager_OnFlutterTouch_m251A2D89298B300F2BE0DEC91CEEE304D021CE05 (void);
-extern void TimecapsuleManager_OnFlutterTouchEnd_mAACA0BF768C542FF50439D57D4783C9FB1FDF6EF (void);
-extern void TimecapsuleManager_ResetAR_m1F1C366C6F91C08F53EE08BBD2A4682FF109F757 (void);
+extern void TimecapsuleManager_BuryCapsule_m1680184009A3E483A50A0ADB27747AF95EA1D8B1 (void);
 extern void TimecapsuleManager__ctor_mFEEE03C7613F22436B9947365F41FB0BA4DCF1B4 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
@@ -84,7 +80,7 @@ extern void MessageHandlerDelegate__ctor_m287CBD25D77011FC5A52D1090F6CC31353AB63
 extern void MessageHandlerDelegate_Invoke_mD1EC9E1841D5014C40A26D4C4BA076482FFC8A4B (void);
 extern void MessageHandlerDelegate_BeginInvoke_m0CC5C5B29E11DD03F1726B49E4B1E516479AC58D (void);
 extern void MessageHandlerDelegate_EndInvoke_mAD2746E001DB9A3D18A1D806610542321FE0CF16 (void);
-static Il2CppMethodPointer s_methodPointers[85] = 
+static Il2CppMethodPointer s_methodPointers[81] = 
 {
 	NULL,
 	NULL,
@@ -112,24 +108,20 @@ static Il2CppMethodPointer s_methodPointers[85] =
 	SceneLoader__ctor_m2248766DF38AF07562AD31501C7275B8DF1B7D29,
 	TimecapsuleAR_Update_m8BDD3008641DA8933FE08312419302FD51A7EBD0,
 	TimecapsuleAR_SpawnCapsule_m4F67FF61CD00F4BC4E8EA81402E7A6A88CCFEEF2,
+	TimecapsuleAR_BuryCapsule_m35DE21A325F337215CE39828DE5952EACDF4CAD9,
 	TimecapsuleAR_BuryAnimation_mB8449FED9CCFCA7417D798AAEC2F7B614F73BC39,
-	TimecapsuleAR_OnFlutterTouch_m08930626927B5BEEAADC4D978689A50942CE8172,
-	TimecapsuleAR_OnFlutterTouchEnd_m5D0664C0C4CD88B9CA15B3745F23624D90528369,
-	TimecapsuleAR_ResetAR_m2E5D88F370844518D0C911A4A1F69E6D312C361A,
 	TimecapsuleAR_SendMessageToFlutter_mFE258995ACF51CB6C77F85E458FF7B12D9744BC1,
 	TimecapsuleAR__ctor_mCBA6FFB380F6577AD6454469D831CCE2B7DADA43,
 	TimecapsuleAR__cctor_mF301A10D93D3A7F002F08DDB54A327C731B2D668,
-	U3CBuryAnimationU3Ed__14__ctor_m10CD7E152BDD786E178ED99BE882AAB5F61FC1E5,
-	U3CBuryAnimationU3Ed__14_System_IDisposable_Dispose_m3562C36BB3B3D858395D796C5950D395BA56CA40,
-	U3CBuryAnimationU3Ed__14_MoveNext_m458932A02492D27E51BD3B8E48EC6791874D2B12,
-	U3CBuryAnimationU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7E61D31D67CD30D3C9CF10E4B8D70C7B5F96BE57,
-	U3CBuryAnimationU3Ed__14_System_Collections_IEnumerator_Reset_mA91AB83930831B4E86449D35182F00D45D959C0D,
-	U3CBuryAnimationU3Ed__14_System_Collections_IEnumerator_get_Current_m24808234C6BF80B38A713435E52D58CB3CAFCB30,
+	U3CBuryAnimationU3Ed__10__ctor_mECF39AFADFAF6580578C6B7B25BA24ECF8E5D71C,
+	U3CBuryAnimationU3Ed__10_System_IDisposable_Dispose_m17BACDDCC4A742CC1D00533E13753E173B61D673,
+	U3CBuryAnimationU3Ed__10_MoveNext_mD564D1A8B7A8460B00BADC7851179108B32687FB,
+	U3CBuryAnimationU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7C544C65724799E3F76B53A548210CFD8BB77687,
+	U3CBuryAnimationU3Ed__10_System_Collections_IEnumerator_Reset_mDC6065497DE0DAE374D107274E79FFB7F0BCC9EB,
+	U3CBuryAnimationU3Ed__10_System_Collections_IEnumerator_get_Current_mD79F2C11F931211408152E9927E3E4C284719706,
 	TimecapsuleManager_Start_m665DB471DAC93AA06233B4BD93F6F1786612D37F,
 	TimecapsuleManager_SpawnCapsule_m294A0BAF1FE2C13FB48E9379968279095CE43B49,
-	TimecapsuleManager_OnFlutterTouch_m251A2D89298B300F2BE0DEC91CEEE304D021CE05,
-	TimecapsuleManager_OnFlutterTouchEnd_mAACA0BF768C542FF50439D57D4783C9FB1FDF6EF,
-	TimecapsuleManager_ResetAR_m1F1C366C6F91C08F53EE08BBD2A4682FF109F757,
+	TimecapsuleManager_BuryCapsule_m1680184009A3E483A50A0ADB27747AF95EA1D8B1,
 	TimecapsuleManager__ctor_mFEEE03C7613F22436B9947365F41FB0BA4DCF1B4,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
@@ -172,7 +164,7 @@ static Il2CppMethodPointer s_methodPointers[85] =
 	MessageHandlerDelegate_BeginInvoke_m0CC5C5B29E11DD03F1726B49E4B1E516479AC58D,
 	MessageHandlerDelegate_EndInvoke_mAD2746E001DB9A3D18A1D806610542321FE0CF16,
 };
-static const int32_t s_InvokerIndices[85] = 
+static const int32_t s_InvokerIndices[81] = 
 {
 	0,
 	0,
@@ -182,89 +174,85 @@ static const int32_t s_InvokerIndices[85] =
 	0,
 	0,
 	0,
-	2817,
-	2817,
-	2446,
-	2817,
-	2817,
-	2817,
-	2446,
-	2817,
-	2817,
-	2817,
-	2434,
-	2817,
-	2817,
-	2817,
-	2817,
-	2817,
-	2817,
-	2446,
-	2747,
-	2446,
-	2446,
-	2446,
-	2446,
-	2817,
-	5405,
-	2434,
-	2817,
-	2690,
-	2747,
-	2817,
-	2747,
-	2817,
-	2446,
-	2446,
-	2446,
-	2446,
-	2817,
-	5426,
-	2817,
-	4690,
-	5242,
-	5405,
-	5405,
-	5405,
-	2817,
+	2795,
+	2795,
+	2430,
+	2795,
+	2795,
+	2795,
+	2430,
+	2795,
+	2795,
+	2795,
+	2418,
+	2795,
+	2795,
+	2795,
+	2795,
+	2795,
+	2795,
+	2430,
+	2430,
+	2725,
+	2430,
+	2795,
+	5362,
+	2418,
+	2795,
+	2668,
+	2725,
+	2795,
+	2725,
+	2795,
+	2430,
+	2430,
+	2795,
+	5382,
+	2795,
+	4656,
+	5202,
+	5362,
+	5362,
+	5362,
+	2795,
 	0,
 	0,
 	0,
 	0,
-	5039,
+	4999,
 	0,
-	600,
-	2446,
-	2817,
-	5355,
-	2446,
-	2446,
-	2446,
-	2446,
-	2817,
-	1641,
-	2817,
-	2817,
-	2817,
-	2446,
-	2446,
-	2446,
-	2446,
-	2817,
-	1606,
-	2446,
-	844,
-	2446,
-	1606,
-	2446,
-	844,
-	2446,
+	598,
+	2430,
+	2795,
+	5312,
+	2430,
+	2430,
+	2430,
+	2430,
+	2795,
+	1634,
+	2795,
+	2795,
+	2795,
+	2430,
+	2430,
+	2430,
+	2430,
+	2795,
+	1599,
+	2430,
+	841,
+	2430,
+	1599,
+	2430,
+	841,
+	2430,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[3] = 
 {
 	{ 0x02000002, { 0, 29 } },
 	{ 0x0200000C, { 29, 11 } },
-	{ 0x0600003B, { 40, 2 } },
+	{ 0x06000037, { 40, 2 } },
 };
 extern const uint32_t g_rgctx_U3CU3Ef__AnonymousType0_4_t93FD0713D40011506D6B5581D9D5064D1A1A31B8;
 extern const uint32_t g_rgctx_U3CidU3Ej__TPar_tB4283D6614B0A1B9713411CF590AE6445EC76C76;
@@ -353,12 +341,11 @@ static const Il2CppRGCTXDefinition s_rgctxValues[42] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Extensions_Value_TisT_tEFC8830F1FE6E05437F90CF7FEE659B3D392EC0D_m09C831EF37EB25EABFF252D8EE59CC79FB409B6D },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_tEFC8830F1FE6E05437F90CF7FEE659B3D392EC0D },
 };
-extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationAssemblyU2DCSharp;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	85,
+	81,
 	s_methodPointers,
 	0,
 	NULL,
@@ -369,7 +356,7 @@ const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule =
 	s_rgctxIndices,
 	42,
 	s_rgctxValues,
-	&g_DebuggerMetadataRegistrationAssemblyU2DCSharp,
+	NULL,
 	NULL,
 	NULL,
 	NULL,

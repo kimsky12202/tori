@@ -1,9 +1,0 @@
-{
-  "Messages": [
-    {
-      "Type": 1,
-      "Text": "Unity.IL2CPP.Building.BuilderFailedException: Build failed with 0 successful nodes and 1 failed ones\r\nAnnotation: CopyFiles C:/_toriCapsule/client/android/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.dbg.so\r\nCmdline: ul\r\nExitCode: 112\r\nStdout: \nCopying the file failed: \uB514\uC2A4\uD06C \uACF5\uAC04\uC774 \uBD80\uC871\uD569\uB2C8\uB2E4.\r\n\r\n   at il2cpp.Program.DoRun(TinyProfiler2 tinyProfiler, String[] args, RuntimePlatform platform, Il2CppCommandLineArguments il2CppCommandLineArguments, BuildingOptions buildingOptions, Boolean throwExceptions)"
-    }
-  ],
-  "CommandLine": "--compile-cpp --platform=Android --architecture=arm64 --outputpath=C:/_toriCapsule/client/android/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so --baselib-directory=C:/_toriCapsule/client/android/unityLibrary/src/main/jniStaticLibs/arm64-v8a --incremental-g-c-time-slice=3 --dotnetprofile=unityaot-linux --enable-debugger --profiler-report --profiler-output-file=C:/_toriCapsule/client/android/unityLibrary/build/il2cpp_arm64-v8a_Debug/il2cpp_conv.traceevents --print-command-line --data-folder=C:/_toriCapsule/client/android/unityLibrary/src/main/Il2CppOutputProject/Source/il2cppOutput/data --generatedcppdir=C:/_toriCapsule/client/android/unityLibrary/src/main/Il2CppOutputProject/Source/il2cppOutput --cachedirectory=C:/_toriCapsule/client/android/unityLibrary/build/il2cpp_arm64-v8a_Debug/il2cpp_cache --tool-chain-path=C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK"
-}
