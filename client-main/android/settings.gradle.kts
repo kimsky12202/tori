@@ -26,7 +26,8 @@ plugins {
 }
 
 include(":app")
-include(":compat-stubs")
-include(":unityLibrary")
-project(":unityLibrary").projectDir = file("./unityLibrary")
-include(":unityLibrary:xrmanifest.androidlib")
+// Unity 관련 모듈은 일시 비활성화 (AR 기능 보류). 추후 Unity export 안정화되면 복원.
+// include(":compat-stubs")
+// include(":unityLibrary")
+// project(":unityLibrary").projectDir = file("./unityLibrary")
+// include(":unityLibrary:xrmanifest.androidlib")

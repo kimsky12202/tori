@@ -10,20 +10,6 @@ if (file("google-services.json").exists()) {
     apply(plugin = "com.google.gms.google-services")
 }
 
-// flutter_unity_widget가 app/libs/unity-classes.jar 경로를 참조하므로
-// unityLibrary/libs/unity-classes.jar 를 app/libs/ 로 복사 (configuration 단계에서 즉시 실행).
-run {
-    val source = file("../unityLibrary/libs/unity-classes.jar")
-    if (source.exists()) {
-        val targetDir = file("libs")
-        targetDir.mkdirs()
-        val target = File(targetDir, "unity-classes.jar")
-        if (!target.exists() || target.lastModified() < source.lastModified()) {
-            source.copyTo(target, overwrite = true)
-        }
-    }
-}
-
 android {
     namespace = "com.example.login_test"
     compileSdk = flutter.compileSdkVersion
@@ -59,10 +45,6 @@ android {
 }
 
 dependencies {
-    api(project(":unityLibrary"))
-    runtimeOnly(project(":compat-stubs"))
-    // app 의 Kotlin/Java 소스가 Unity 클래스(예: IUnityPlayerLifecycleEvents)를 직접 참조하므로 compileOnly 로 제공.
-    compileOnly(files("../unityLibrary/libs/unity-classes.jar"))
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 
